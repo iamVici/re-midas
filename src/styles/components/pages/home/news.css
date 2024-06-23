@@ -12,7 +12,7 @@
 }
 
 .banner-eventarlecchino {
-  background-image: url(../../../../assets/backgrounds/events/yelancap.png);
+  background-image: url('../../../../assets/backgrounds/events/yelancap.png');
 }
 
 .news-article:not(:first-child) {
