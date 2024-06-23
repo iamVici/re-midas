@@ -1,0 +1,103 @@
+.event-inazuma {
+  background-image: url('../../../Assets/backgrounds/locations/inazuma/inazuma-pb.jpg');
+}
+
+.event-inazuma:hover {
+  background-image: url('../../../Assets/backgrounds/locations/inazuma/inazuma-cl.jpg');
+}
+
+.active.event-inazuma {
+  background-image: url('../../../Assets/backgrounds/locations/inazuma/inazuma-cl.jpg');
+}
+
+.event-green {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(30, 241, 164, 0.1) 100%);
+}
+
+.event-blue {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(69, 30, 241, 0.1) 100%);
+}
+
+.event-indigo {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, var(--myindigo-40) 100%);
+}
+
+.char-yae {
+  background-image: url('../../../Assets/Character/Yaemiko/yaemiko-full.png');
+}
+
+.char-nilou {
+  background-image: url('../../../Assets/character/nilou/nilou.png');
+}
+
+.char-hutao {
+  background-image: url('../../../Assets/character/hutao/hutao.png');
+}
+
+.char-clorinde {
+  background-image: url('../../../Assets/Character/Clorinde/clorinde-full.png');
+}
+
+.char-raiden {
+  background-image: url('../../../Assets/Character/Raiden/raiden.png');
+}
+
+.char-ganyu {
+  background-image: url('../../../Assets/character/ganyu/ganyu.png');
+}
+
+.mainchar-xiao {
+  background-image: url('../../../Assets/Character/Xiao/xiao.png');
+  scale: 1 !important;
+  mix-blend-mode: hard-light;
+  left: 440px;
+  top: 0;
+}
+
+.char-xiao {
+  background-image: url('../../../Assets/Character/Xiao/xiao.png');
+}
+
+.mainchar-yaemiko {
+  background-image: url('../../../Assets/Character/Yaemiko/yaemiko-full.png');
+}
+
+.banner-inazuma {
+  background-image: url('../../../Assets/backgrounds/locations/inazuma/inazuma-pb.jpg');
+}
+
+.char-furina-full {
+  background-image: url('../../../Assets/character/furina/Furina-full.png');
+}
+
+.char-xiao-full {
+  background-image: url('../../../Assets/character/xiao/xiao-full.png');
+}
+
+.char-bennet-full {
+  background-image: url('../../../Assets/character/bennet/Bennet-full.png');
+}
+
+.char-fischl-full {
+  background-image: url('../../../Assets/character/Fischl/fischl-full.png');
+}
+
+.element-anemo {
+  content: "";
+  background-image: url(../../../../src/assets/material/elements/element-electro.webp);
+}
+
+.element-electro {
+  content: "";
+  background-image: url(../../../../src/assets/material/elements/element-electro.webp);
+}
+
+.element-pyro {
+  content: "";
+  background-image: url(../../../../src/assets/material/elements/element-electro.webp);
+}
+
+.element-hydro {
+  content: "";
+  background-image: url(../../../../src/assets/material/elements/element-electro.webp);
+}

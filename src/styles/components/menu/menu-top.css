@@ -1,0 +1,141 @@
+nav {
+  text-decoration: none;
+  list-style: none;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-top ul {
+  display: flex;
+}
+
+.menu-top ul li {
+  display: flex;
+  align-items: center;
+}
+
+.menu-top ul li:not(:last-child)::after {
+  content: " | ";
+  color: #000;
+  padding: 0 8px 4px 8px;
+}
+
+.menu-top {
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  display: flex;
+  z-index: 999;
+  height: 80px;
+  backdrop-filter: saturate(80%) blur(8px);
+  box-shadow: 0 10px 40px -12px rgba(16,24,40,.1);
+  box-shadow: 0 12px 39px 0 rgba(198, 198, 198, .55);
+  border: 1px solid #d3def2;
+  background-color: #ffffffb9;
+  border-top: none;
+  border-radius: 24px;
+  margin-top: 24px;
+  place-self: center;
+  left: auto;
+  right: auto;
+  top: 0;
+  min-width: 1002px;
+}
+
+.menu-logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  max-width: 240px; 
+  min-width: 240px;
+}
+
+.menu-top-nav {
+  display: flex;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  padding: 0 auto;
+  min-width: 440px;
+  place-content: center;
+}
+
+.menu-top .menu-profile {
+  display: flex;
+  margin-left: auto;
+  margin-right: 0;
+  max-width: 240px; 
+  min-width: 240px;
+  align-items: center;
+  justify-content: right;
+}
+
+.menu-welcome-text {
+  text-align: right;
+  line-height: 1;
+}
+
+.menu-welcome-text p {
+  margin: 0 !important;
+}
+
+.menu-welcome-text span {
+  text-align: right;
+  font-weight: bold;
+  margin: 0 !important;
+}
+
+.menu-avatar {
+  background-image: url('../../../Assets/profile/avatar/avatar-main-b.jpg');
+  background-size: cover;
+  border: 1px solid #d3def2;
+  border-radius: 16px;
+  position: relative;
+  align-items: center;
+  height: 54px;
+  width: 54px;
+  margin-left: 8px;
+}
+
+.logo-text {
+  margin-left: 8px;
+}
+
+.logo-text span {
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.logo-text p {
+  font-weight: medium;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-family: 'ep-stellari';
+  line-height: 1;
+  margin-top: -8px !important;
+}
+
+.nav-link {
+  padding: 4px 8px !important;
+}
+
+.nav-link:hover{
+  padding: 4px 8px !important;
+  border-radius: 8px !important;
+  color: var(--myindigo) !important;
+  background-color: var(--myindigo-20) !important;
+}
+
+.nav-link.active{
+  background-color: var(--myindigo) !important;
+  padding: 4px 8px !important;
+  border-radius: 8px !important;
+  color: #fff !important;
+  font-weight: bold;
+}

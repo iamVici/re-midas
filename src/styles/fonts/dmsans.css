@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'dmsans';
+  src: url('../../assets/fonts/dmsans/DMSans-VariableFont_opsz\,wght.ttf') format('truetype'),
+       url('../../assets/fonts/dmsans/DMSans-Italic-VariableFont_opsz\,wght.ttf') format('truetype');
+       font-weight: 200 700;
+       font-display: swap;
+       font-style: normal;
+}

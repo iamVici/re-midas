@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'wave';
+  src: url('../../assets/fonts/wave/Wavefont-VariableFont.ttf') format('truetype');
+  font-weight: 100 1000;
+  font-style: normal;
+  font-display: swap;
+}
+
+.wave-font {
+  font-family: 'wave' !important;
+}
