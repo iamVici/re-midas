@@ -1,0 +1,91 @@
+.modal-login .modal-header {
+  border-bottom: 0 !important;
+  border-radius: 24px !important;
+}
+
+.modal-login .modal-header .btn-close {
+
+}
+
+.modal-login .modal-content {
+  border-radius: 24px;
+}
+
+.modal-login .modal-body {
+  height: 440px;
+}
+
+.modal-login-left {
+  
+}
+
+.modal-login-left-background {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 410px;
+  border-radius: 16px;
+}
+
+.modal-login-left-char {
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 540px;
+  overflow: hidden;
+  height: 440px;
+  scale: 1;
+  top: -30px;
+  left: -64px;
+  position: relative;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.05));
+}
+
+.modal-login-right {
+  z-index: 999;
+  position: relative;
+}
+
+.modal-login-area {
+  padding: 40px;
+}
+
+.modal-login-area .form-control {
+  height: 48px;
+  border-radius: 8px;
+  background-color: var(--mygray-20);
+}
+
+.modal-login-header-text {
+  color: var(--mygray);
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 0 !important;
+  padding: 0;
+  line-height: 1;
+}
+
+.modal-login-right .btn-close {
+  z-index: 999;
+  position: relative;
+  font-size: 10px !important;
+  color: black !important;
+  opacity: 1 !important;
+}
+
+.modal-login-title {
+  font-weight: bold;
+  margin-bottom: 16px !important;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--myindigo) !important;
+  padding: 4px 8px !important;
+  border-radius: 8px !important;
+  border: 1px solid var(--myindigo) !important;
+  color: #fff !important;
+  font-weight: bold;
+  height: 48px;
+  font-weight: bold;
+}

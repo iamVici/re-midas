@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'krylon';
+  src: url('../../assets/fonts/krylon/Krylon-Regular.otf') format('woff');
+  font-weight: 100 1000;
+  font-style: normal;
+  font-display: swap;
+}
+
+.krylon-font {
+  font-family: 'krylon' !important;
+}

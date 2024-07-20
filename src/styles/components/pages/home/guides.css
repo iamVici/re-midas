@@ -1,0 +1,306 @@
+.guides-content {
+  margin: 80px 0;
+}
+
+.char-main-banner-area {
+  width: 100%;
+  background-color: #181818;
+  border: 1px solid #474747;
+  border-radius: 24px;
+  position: relative;
+  transition: 800ms;
+}
+
+.char-main-banner-area:hover {
+  transform: translate(0px, -8px);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid #d8dbec;
+  cursor: pointer;
+  transition: 800ms;
+}
+
+.char-main-banner-area:hover .banner-inazuma {
+  background-image: url('../../../../assets/backgrounds/locations/inazuma/Inazuma-cl.jpg') !important;
+  transition: 800ms;
+}
+
+.char-tag-new {
+  width: 64px;
+  padding: 4px 8px;
+  background-color: var(--myred);
+  color: var(--mywhite);
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  top: 24px;
+  right: -8px;
+  position: absolute;
+  border-radius: 8px 0 8px 8px;
+  line-height: 1;
+  font-size: 16px;
+  text-align: center;
+  z-index: 999;
+}
+
+.char-main-banner-background {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 320px;
+  border-radius: 24px;
+}
+
+.char-main-banner-content {
+  height: 320px;
+  border-radius: 24px;
+  position: relative;
+}
+
+.char-main-banner {
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 440px;
+  scale: 1;
+  top: -120px;
+  left: 124px;
+  position: relative;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+}
+
+.char-effect {
+  width: 100%;
+  height: 320px;
+  border-radius: 24px;
+}
+
+.main-banner-video {
+  width: 240px;
+}
+
+.char-main-banner-description {
+  position: absolute;
+  margin: auto 0;
+  justify-content: center;
+  align-items: center;
+  padding-left: 32px;
+  height: 320px;
+  align-content: center;
+}
+
+.char-main-banner-video {
+  width: 320px;
+  border-radius: 16px;
+  display: none;
+}
+
+.char-main-banner-title .icon-element {
+  width: 48px;
+  height: 48px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.char-main-banner-name {
+  font-size: 32px;
+  font-weight: bold;
+  font-style: italic;
+  margin: 0;
+  color: var(--mywhite);
+  line-height: 1;
+}
+
+.char-stars {
+  font-size: 12px;
+  color: var(--mygold);
+}
+
+.char-main-banner-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.char-main-banner-text {
+  width: 400px;
+}
+
+.play-button {
+  position: absolute;
+  bottom: 56px;
+  left: 72px;
+  width: 40px;
+  height: 40px;
+  transform: translateX(-50%);
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  border: 1px solid var(--mywhite);
+  background-color: var(--myblack-20);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  z-index: 999;
+  transition: 800ms;
+}
+
+.play-button:hover {
+  background-color: var(--mywhite-20);
+  transition: 800ms;
+}
+
+.char-main-banner-cover {
+  width: 320px;
+  height: 180px;
+  border-radius: 16px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.char-banner-name h5 {
+  color: var(--myblack-80);
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.char-banner-area {
+  width: 264px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid #474747;
+  border-radius: 24px;
+  margin-top: 24px;
+  transition: 800ms;
+}
+
+.char-banner-area:hover {
+  border: 1px solid #d8dbec;
+  transform: translate(0px, -8px);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  transition: 800ms;
+}
+
+.char-banner-area:hover .banner-inazuma {
+  background-image: url('../../../../assets/backgrounds/locations/inazuma/Inazuma-cl.jpg') !important;
+  transition: 800ms;
+}
+
+.char-banner-background {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 24px;
+}
+
+.char-banner {
+  height: 360px;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  scale: 1;
+  mask-image: linear-gradient(to right, black 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+.char-fischl-full {
+  left: -40px;
+}
+
+.char-furina-full {
+  margin-left: 24px;
+}
+
+.char-banner-description-area {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.char-banner-description {
+  background-color: var(--mywhite);
+  width: 224px;
+  border: 1px solid #d8dbec;
+  border-radius: 16px;
+  box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px !important;
+  padding: 8px 16px;
+  position: absolute;
+  margin-bottom: 24px;
+}
+
+.char-banner-element-content {
+  display: flex;
+  align-items: center;
+}
+
+.char-banner-element .icon-element {
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: 0;
+}
+
+.char-banner-element-content p {
+  margin: 0 !important;
+  padding-left: 2px;
+  color: var(--myblack-80);
+  font-size: 14px;
+}
+
+.char-banner-text {
+  color: var(--myblack-50);
+  font-size: 12px;
+}
+
+.char-tag-popular {
+  padding: 4px 8px;
+  background-color: var(--mypink);
+  color: var(--mywhite);
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 24px;
+  margin-left: -8px;
+  position: absolute;
+  border-radius: 0 8px 8px 8px;
+  line-height: 1;
+  font-size: 16px;
+  text-align: center;
+  z-index: 999;
+}
+
+.char-main-banner-shadow-left {
+  background: linear-gradient(90deg,
+      hsla(0, 0%, 9%, .50) 20%,
+      hsla(0, 0%, 9%, .45) 25%,
+      hsla(0, 0%, 9%, .40) 35%,
+      hsla(0, 0%, 9%, .35) 40%,
+      hsla(0, 0%, 9%, .30) 45%,
+      hsla(0, 0%, 9%, .25) 50%,
+      hsla(0, 0%, 9%, .20) 55%,
+      hsla(0, 0%, 9%, .15) 60%,
+      hsla(0, 0%, 9%, .10) 65%,
+      hsla(0, 0%, 9%, .05) 70%,
+      hsla(0, 0%, 9%, .0) 75%,
+      hsla(0, 0%, 9%, .0) 80%,
+      hsla(0, 0%, 9%, .0) 85%,
+      hsla(0, 0%, 9%, .0) 90%,
+      hsla(0, 0%, 9%, .0) 95%,
+      hsla(0, 0%, 9%, 0));
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  border-radius: 24px;
+}

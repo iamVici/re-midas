@@ -1,0 +1,141 @@
+
+.tf-v1-sidetab.ready {
+  transition: transform 250ms ease-in-out;
+}
+
+.tf-v1-sidetab {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  width: 400px;
+  height: 580px;
+  transform: translate(100%, -50%);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08), 0 2px 12px rgba(0,0,0,0.06);
+  z-index: 10001;
+  will-change: transform;
+}
+
+.tf-v1-sidetab-button {
+  position: absolute;
+  top: 50%;
+  left: -48px;
+  transform: rotate(-90deg) translateX(-50%);
+  transform-origin: left top;
+  min-width: 100px;
+  max-width: 540px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 8px 8px 0 0;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08), 0 2px 12px rgba(0,0,0,0.06);
+  background-color: #3a7685;
+  cursor: pointer;
+  border: 0;
+  text-decoration: none;
+  outline: none;
+}
+
+.tf-v1-sidetab-button-icon {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  transform: rotate(90deg);
+  margin-right: 12px;
+  position: relative;
+  order: -1;
+}
+
+.tf-v1-sidetab-button-icon>img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+._2-Oc1 {
+  position: fixed;
+  z-index: 12;
+  bottom: 32px;
+  width: 100%;
+}
+
+.O9K1m {
+  max-width: 1220px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+._3YAeN {
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 12px 39px 0 rgba(198,198,198,.55);
+  padding: 24px 32px;
+}
+
+._1D0lX, ._3YAeN {
+  display: flex;
+  align-items: center;
+}
+
+._2fvzz, ._8HQde {
+  display: flex;
+  flex-direction: column;
+}
+
+._2fvzz {
+  flex: 1;
+}
+
+._3xpoo {
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgba(57, 57, 53, .88);
+}
+
+svg {
+  vertical-align: middle;
+}
+
+._3FSpm {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.cookie-consent {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 12px 39px 0 rgba(198,198,198,.55);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.5s ease-out;
+  transform: translateY(0);
+}
+
+.cookie-consent .cookie-consent-content {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cookie-consent .cookie-consent-header {
+  flex: 1;
+}
+
+.cookie-consent .cookie-consent-close {
+  cursor: pointer;
+}
+
+.cookie-consent.hidden {
+  transform: translateY(100%);
+}

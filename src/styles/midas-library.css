@@ -1,0 +1,169 @@
+:root {
+  --myred: #ee4242;
+
+  --myblue: #3983fc;
+  --mygold: #ffbc1c;
+
+  --myblack: #070707;
+  --mywhite: #f4f4f4;
+  --mygray: #d0d0d0;
+
+
+  --mypink: #eb0a8a;
+
+  --mygreen: #54f0ac;
+  --mygreen-90: #54f0ac90;
+  --mygreen-80: #54f0ac80;
+  --mygreen-70: #54f0ac70;
+  --mygreen-60: #54f0ac60;
+  --mygreen-50: #54f0ac50;
+  --mygreen-40: #54f0ac40;
+  --mygreen-30: #54f0ac30;
+  --mygreen-20: #54f0ac20;
+  --mygreen-10: #54f0ac10;
+
+  --myindigo: #7760ee;
+  --myindigo-95: #7760eef0;
+  --myindigo-90: #7760eee0;
+  --myindigo-85: #7760eed0;
+  --myindigo-80: #7760eec0;
+  --myindigo-75: #7760eeb0;
+  --myindigo-70: #7760eea0;
+  --myindigo-65: #7760ee90;
+  --myindigo-60: #7760ee80;
+  --myindigo-55: #7760ee70;
+  --myindigo-50: #7760ee60;
+  --myindigo-45: #7760ee50;
+  --myindigo-40: #7760ee40;
+  --myindigo-30: #7760ee30;
+  --myindigo-20: #7760ee20;
+  --myindigo-10: #7760ee10;
+
+  --mygold: #ffbc1c;
+  --mygold-95: #ffbc1cf0;
+  --mygold-90: #ffbc1ce0;
+  --mygold-85: #ffbc1cd0;
+  --mygold-80: #ffbc1cc0;
+  --mygold-75: #ffbc1cb0;
+  --mygold-70: #ffbc1ca0;
+  --mygold-65: #ffbc1c90;
+  --mygold-60: #ffbc1c80;
+  --mygold-55: #ffbc1c70;
+  --mygold-50: #ffbc1c60;
+  --mygold-45: #ffbc1c50;
+  --mygold-40: #ffbc1c40;
+  --mygold-30: #ffbc1c30;
+  --mygold-20: #ffbc1c20;
+  --mygold-10: #ffbc1c10;
+
+  --myblack: #070707;
+  --myblack-95: #070707f0;
+  --myblack-90: #070707e0;
+  --myblack-85: #070707d0;
+  --myblack-80: #070707c0;
+  --myblack-75: #070707b0;
+  --myblack-70: #070707a0;
+  --myblack-65: #07070790;
+  --myblack-60: #07070780;
+  --myblack-55: #07070770;
+  --myblack-50: #07070760;
+  --myblack-45: #07070750;
+  --myblack-40: #07070740;
+  --myblack-30: #07070730;
+  --myblack-20: #07070720;
+  --myblack-10: #07070710;
+
+  --mywhite: #f4f4f4;
+  --mywhite-95: #f4f4f4f0;
+  --mywhite-90: #f4f4f4e0;
+  --mywhite-85: #f4f4f4d0;
+  --mywhite-80: #f4f4f4c0;
+  --mywhite-75: #f4f4f4b0;
+  --mywhite-70: #f4f4f4a0;
+  --mywhite-65: #f4f4f490;
+  --mywhite-60: #f4f4f480;
+  --mywhite-55: #f4f4f470;
+  --mywhite-50: #f4f4f460;
+  --mywhite-45: #f4f4f450;
+  --mywhite-40: #f4f4f440;
+  --mywhite-30: #f4f4f430;
+  --mywhite-20: #f4f4f420;
+  --mywhite-10: #f4f4f410;
+
+  --mygray: #d0d0d0;
+  --mygray-95: #d0d0d0f0;
+  --mygray-90: #d0d0d0e0;
+  --mygray-85: #d0d0d0d0;
+  --mygray-80: #d0d0d0c0;
+  --mygray-75: #d0d0d0b0;
+  --mygray-70: #d0d0d0a0;
+  --mygray-65: #d0d0d090;
+  --mygray-60: #d0d0d080;
+  --mygray-55: #d0d0d070;
+  --mygray-50: #d0d0d060;
+  --mygray-45: #d0d0d050;
+  --mygray-40: #d0d0d040;
+  --mygray-30: #d0d0d030;
+  --mygray-20: #d0d0d020;
+  --mygray-10: #d0d0d010;
+}
+
+.myblack{
+  color: var(--myblack);
+}
+  
+.myred{
+  color: var(--myred);
+}
+
+.mywhite{
+  color: var(--mywhite);
+}
+
+.mygreen{
+  color: var(--mygreen);
+}
+
+.myblack{
+  color: var(--myblack);
+}
+
+.mygold{
+  color: var(--mygold);
+}
+
+.mypink {
+  color: var(--mypink);
+}
+
+.mybgwhite{
+  background-color: var(--mywhite);
+}
+
+.mybggreen{
+  background-color: var(--mygreen);
+}
+
+.mybgblack{
+  background-color: var(--myblack);
+}
+  
+.mybgred{
+  background-color: var(--myred);
+}
+
+.mybgblue{
+  background-color: var(--myblue);
+}
+
+.mybggold{
+  background-color: var(--mygold);
+}
+
+.mybgpink {
+  background-color: var(--mypink);
+}
+
+*{
+  --myoldred: #e93c40;
+}

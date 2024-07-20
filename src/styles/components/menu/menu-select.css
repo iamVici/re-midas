@@ -1,0 +1,113 @@
+@media only screen and (max-width: 1920px) {
+  .select-menu-base.reduced {
+    display: block;
+  }
+  .select-menu-base.full {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .select-menu-base.reduced {
+    display: none !important;
+  }
+  .select-menu-base.full {
+    display: block !important;
+  }
+}
+
+.select-menu-area {
+  max-width: 1920px;
+}
+
+.select-menu-base {
+  position: fixed;
+  top: 42%;
+  z-index: 999;
+  will-change: transform;
+  height: 200px;
+  display: flex;
+  align-self: center;
+  align-content: center;
+}
+
+.select-menu-content {
+  background-color: #fff;
+  box-shadow: 0 12px 39px 0 rgba(198, 198, 198, .55);
+  border: 1px solid #d3def2;
+  padding: 12px 8px;
+  border-radius: 0 24px 24px 0;
+  align-self: center;
+  align-content: center;
+}
+
+.select-menu-base img {
+  width: 40px;
+  height: 40px;
+  margin: 4px 0;
+  background-position: center;
+  background-size: contain;
+  padding: 0;
+  border-radius: 16px;
+}
+
+.select-menu-base a {
+
+}
+
+.select-menu-base ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.select-menu-base hr {
+  margin: 4px 0;
+  width: 100%;
+  border: 1px solid #fefefe;
+}
+
+.select-menu-tooltip {
+  --bs-tooltip-bg: var(--myindigo) !important;
+  --bs-tooltip-color: white !important;
+  z-index: 1000;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.select-menu-icon {
+  transition: 600ms;
+}
+
+.select-menu-icon:hover {
+  scale: 1.2;
+  transition: 600ms;
+}
+
+.select-menu-link {
+  background-color: transparent !important;
+}
+
+.select-menu-link.offline {
+  background-color: transparent !important;
+}
+
+.select-menu-link.offline .select-menu-icon:hover {
+  scale: 1 !important;
+  transition: 600ms;
+  background-color: transparent;
+}
+
+.select-menu-icon.active {
+  scale: 1.2;
+  border: 1px solid #d3def2;
+  box-shadow: 0 12px 39px 0 rgba(198, 198, 198, .55);
+}
+
+.select-menu-link.offline img{
+  filter: grayscale(1);
+  background-color: transparent;
+}
+
+.select-menu-tooltip.offline{
+  --bs-tooltip-bg: #c1c1c1 !important;
+}
