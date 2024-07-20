@@ -12,6 +12,13 @@ body {
   overflow-x: hidden;
 }
 
+<<<<<<< HEAD
+=======
+nav {
+  display: grid;
+}
+
+>>>>>>> master
 .home-content {
   background-color: #181818;
 }

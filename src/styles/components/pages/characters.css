@@ -66,6 +66,13 @@
   background-image: url('../../../Assets/backgrounds/locations/inazuma/inazuma-pb.jpg');
 }
 
+<<<<<<< HEAD
+=======
+.banner-inazuma-cl {
+  background-image: url('../../../Assets/backgrounds/locations/inazuma/inazuma-cl.jpg');
+}
+
+>>>>>>> master
 .char-furina-full {
   background-image: url('../../../Assets/character/furina/Furina-full.png');
 }
