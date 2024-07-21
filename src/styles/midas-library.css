@@ -1,15 +1,43 @@
 :root {
   --myred: #ee4242;
+  --myred-95: #ee4242f0;
+  --myred-90: #ee4242e0;
+  --myred-85: #ee4242d0;
+  --myred-80: #ee4242c0;
+  --myred-75: #ee4242b0;
+  --myred-70: #ee4242a0;
+  --myred-65: #ee424290;
+  --myred-60: #ee424280;
+  --myred-55: #ee424270;
+  --myred-50: #ee424260;
+  --myred-45: #ee424250;
+  --myred-40: #ee424240;
+  --myred-30: #ee424230;
+  --myred-20: #ee424220;
+  --myred-10: #ee424210;
 
   --myblue: #3983fc;
-  --mygold: #ffbc1c;
 
   --myblack: #070707;
   --mywhite: #f4f4f4;
   --mygray: #d0d0d0;
 
-
   --mypink: #eb0a8a;
+  --mypink-95: #eb0a8af0;
+  --mypink-90: #eb0a8ae0;
+  --mypink-85: #eb0a8ad0;
+  --mypink-80: #eb0a8ac0;
+  --mypink-75: #eb0a8ab0;
+  --mypink-70: #eb0a8aa0;
+  --mypink-65: #eb0a8a90;
+  --mypink-60: #eb0a8a80;
+  --mypink-55: #eb0a8a70;
+  --mypink-50: #eb0a8a60;
+  --mypink-45: #eb0a8a50;
+  --mypink-40: #eb0a8a40;
+  --mypink-30: #eb0a8a30;
+  --mypink-20: #eb0a8a20;
+  --mypink-10: #eb0a8a10;
 
   --mygreen: #54f0ac;
   --mygreen-90: #54f0ac90;
@@ -55,6 +83,23 @@
   --mygold-30: #ffbc1c30;
   --mygold-20: #ffbc1c20;
   --mygold-10: #ffbc1c10;
+
+  --myyellow: #fbe560;
+  --myyellow-95: #fbe560f0;
+  --myyellow-90: #fbe560e0;
+  --myyellow-85: #fbe560d0;
+  --myyellow-80: #fbe560c0;
+  --myyellow-75: #fbe560b0;
+  --myyellow-70: #fbe560a0;
+  --myyellow-65: #fbe56090;
+  --myyellow-60: #fbe56080;
+  --myyellow-55: #fbe56070;
+  --myyellow-50: #fbe56060;
+  --myyellow-45: #fbe56050;
+  --myyellow-40: #fbe56040;
+  --myyellow-30: #fbe56030;
+  --myyellow-20: #fbe56020;
+  --myyellow-10: #fbe56010;
 
   --myblack: #070707;
   --myblack-95: #070707f0;
@@ -119,6 +164,11 @@
 .mywhite{
   color: var(--mywhite);
 }
+
+.myyellow{
+  color: var(--myyellow);
+}
+
 
 .mygreen{
   color: var(--mygreen);

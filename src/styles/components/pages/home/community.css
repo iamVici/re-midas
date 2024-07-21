@@ -1,0 +1,194 @@
+.community-content {
+  margin: 64px 0;
+}
+
+.community-event-main-area {
+  margin-top: 16px;
+}
+
+.community-main-event-area {
+
+}
+
+.community-event-profile {
+  width: 54px;
+  height: 54px;
+  border: 1px solid var(--mygray-40);
+}
+
+.community-event-banner {
+  height: 188px;
+  border-radius: 8px;
+}
+
+.community-event-area {
+  width: 100%;
+}
+
+.community-event-title h5{
+  font-size: 20px;
+  font-weight: bold;
+  width: 160px;
+  padding-left: 8px;
+  margin: 0 !important;
+}
+
+.community-event-description {
+  font-size: 16px;
+  color: var(--mygray-60);
+}
+
+.community-event-dateandlocal {
+
+}
+
+.community-event-date p {
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 4px !important;
+}
+
+.community-event-local p {
+  font-size: 12px;
+  color: var(--mygray-40);
+  margin-bottom: 0 !important;
+}
+
+.community-event-available {
+  display: flex;
+  align-items: center;
+}
+
+.community-event-available-circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.community-event-available-text {
+  font-size: 16px;
+  margin: 0 !important;
+  padding-left: 4px;
+}
+
+.available-circle-green {
+  background-color: var(--mygreen);
+  -webkit-box-shadow:0px 0px 24px 8px var(--mygreen-50);
+  -moz-box-shadow: 0px 0px 24px 8px var(--mygreen-50);
+  box-shadow: 0px 0px 24px 8px var(--mygreen-50);
+}
+
+.available-text-green {
+  color: var(--mygreen);
+  text-shadow: var(--mygreen-80) 0px 0px 24px;
+}
+
+.available-circle-red {
+  background-color: var(--myred);
+  -webkit-box-shadow:0px 0px 24px 8px var(--myred-50);
+  -moz-box-shadow: 0px 0px 24px 8px var(--myred-50);
+  box-shadow: 0px 0px 24px 8px var(--myred-50);
+}
+
+.available-text-red {
+  color: var(--myred);
+  text-shadow: var(--myred-80) 0px 0px 24px;
+}
+
+.available-circle-yellow {
+  background-color: var(--myyellow);
+  -webkit-box-shadow:0px 0px 24px 8px var(--myyellow-50);
+  -moz-box-shadow: 0px 0px 24px 8px var(--myyellow-50);
+  box-shadow: 0px 0px 24px 8px var(--myyellow-50);
+}
+
+.available-text-yellow {
+  color: var(--myyellow);
+  text-shadow: var(--myyellow-80) 0px 0px 24px;
+}
+
+.border-light {
+  width: 100%;
+  height: 2px;
+}
+
+.border-yellow {
+  background-color: var(--myyellow);
+  -webkit-box-shadow:0px 0px 24px 8px var(--myyellow-10);
+  -moz-box-shadow: 0px 0px 24px 8px var(--myyellow-10);
+  box-shadow: 0px 0px 24px 8px var(--myyellow-10);
+}
+
+.border-pink {
+  background-color: var(--mypink);
+  -webkit-box-shadow:0px 0px 24px 8px var(--mypink-10);
+  -moz-box-shadow: 0px 0px 24px 8px var(--mypink-10);
+  box-shadow: 0px 0px 24px 8px var(--mypink-10);
+}
+
+.border-indigo {
+  background-color: var(--myindigo);
+  -webkit-box-shadow:0px 0px 24px 8px var(--myindigo-10);
+  -moz-box-shadow: 0px 0px 24px 8px var(--myindigo-10);
+  box-shadow: 0px 0px 24px 8px var(--myindigo-10);
+}
+
+.community-event-banner-3sakura {
+  background-image: url('../../../../../src/assets/others/sakura-cup/banner-sakurath.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.community-event-profile-3sakura {
+  background-image: url('../../../../../src/assets/others/sakura-cup/avatar-sakurath.png');
+  border-radius: 4px;
+  border: 1px solid var(--mygray-40);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.community-event-banner-2sakura {
+  background-image: url('../../../../../src/assets/others/sakura-cup/banner-sakurand.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.community-event-profile-2sakura {
+  background-image: url('../../../../../src/assets/others/sakura-cup/avatar-sakurand.webp');
+  border-radius: 4px;
+  border: 1px solid var(--mygray-40);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.community-event-banner-pokelimpiadas {
+  background-image: url('../../../../../src/assets/others/pokelimpiadas/banner-pokelimpiadas.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.community-event-profile-pokelimpiadas {
+  background-image: url('../../../../../src/assets/others/pokelimpiadas/avatar-pokelimpiadas.jpg');
+  border-radius: 4px;
+  border: 1px solid var(--mygray-40);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.community-event-banner-fuyunobudokai {
+  background-image: url('../../../../../src/assets/others/fuyu-budokai/banner-fuyunobudokai.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.community-event-profile-fuyunobudokai {
+  background-image: url('../../../../../src/assets/others/fuyu-budokai/avatar-fuyunobudokai.jpg');
+  border-radius: 4px;
+  border: 1px solid var(--mygray-40);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

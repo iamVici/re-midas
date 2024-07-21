@@ -19,16 +19,18 @@
 	<!-- Components -->
 	<link rel="stylesheet" href="../src/styles/components/pages/home/home.css">
 	<link rel="stylesheet" href="../src/styles/components/pages/home/about.css">
+	<link rel="stylesheet" href="../src/styles/components/pages/home/community.css">
 	<link rel="stylesheet" href="../src/styles/components/pages/home/events.css">
 	<link rel="stylesheet" href="../src/styles/components/pages/home/guides.css">
 	<link rel="stylesheet" href="../src/styles/components/pages/home/news.css">
 	<link rel="stylesheet" href="../src/styles/components/pages/home/modal-login.css">
+	<link rel="stylesheet" href="../src/styles/components/pages/home/modal-register.css">
 	<link rel="stylesheet" href="../src/styles/components/pages/characters.css">
 	<!-- Styles -->
 	<link rel="stylesheet" href="../src/styles/components/menu/menu-left.css">
 	<link rel="stylesheet" href="../src/styles/components/menu/menu-top.css">
 	<link rel="stylesheet" href="../src/styles/components/menu/menu-select.css">
-	<link rel="stylesheet" href="../src/styles/components/cache/cookies.css">
+	<!--<link rel="stylesheet" href="../src/styles/components/cache/cookies.css">-->
 	<link rel="stylesheet" href="../src/styles/components/infinite-scroll/infinite-scroll.css">
 	<!-- Imported Fonts -->
 	<link rel="stylesheet" href="../src/styles/fonts/fontsimport.css">
@@ -59,10 +61,13 @@
 			<div class="menu menu-top-nav">
 				<ul>
 					<li class="nav-item">
-						<a class="nav-link" href="#scrollhome">Home</a>
+						<a class="nav-link" href="#scrollHome">Home</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#scrollAbout">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#scrollCommunity">Community</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#scrollNews">News</a>
@@ -74,18 +79,29 @@
 						<a class="nav-link" href="#scrollGuides">Guides</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#scrollspyHeading4">Contact</a>
+						<a class="nav-link" href="#scrollContact">Contact</a>
 					</li>
 				</ul>
-				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-login">
-					Login
-				</button>
 			</div>
 			<div class="menu-profile">
+				<!-- Signed in
 				<div class="menu-welcome-text">
 					<p>Welcome back, <br><span>Vici</span>👋.</p>
 				</div>
 				<div class="menu-avatar" data-bs-toggle="offcanvas" data-bs-target="#" aria-controls="">
+					<span class="profile-status position-absolute top-100 start-100 translate-middle">
+					</span>
+				</div>-->
+				<div class="menu-top-sign">
+					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-register">
+						Sign up
+					</button>
+					<span>|</span>
+					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-login">
+						Log in
+					</button>
+				</div>
+				<div class="menu-avatar menu-avatar-offline" data-bs-toggle="offcanvas" data-bs-target="#" aria-controls="">
 					<span class="profile-status position-absolute top-100 start-100 translate-middle">
 					</span>
 				</div>
@@ -94,8 +110,8 @@
 	</nav>
 
 	<!-- Modal Login -->
-	<div class="modal-login modal fade" id="modal-login" data-bs-backdrop="static" data-bs-keyboard="false"
-		tabindex="-1" aria-labelledby="modal-loginLabel" aria-hidden="true">
+	<div class="modal-login modal fade" id="modal-login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+		aria-labelledby="modal-loginLabel" aria-hidden="true">
 		<div class="modal-dialog modal-lg modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-login modal-body">
@@ -105,7 +121,6 @@
 								<div class="modal-login-left">
 									<div class="modal-login-left-background banner-inazuma-cl">
 										<div class="modal-login-left-char char-raiden">
-
 										</div>
 									</div>
 								</div>
@@ -126,20 +141,26 @@
 										</div>
 										<form>
 											<div class="mb-2">
-												<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="youremail@here.com">
+												<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+													placeholder="youremail@here.com">
 												<!--<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>-->
 											</div>
 											<div class="mb-2">
-												<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter password">
+												<input type="password" class="form-control" id="exampleInputPassword1"
+													placeholder="your password">
 											</div>
 											<div class="mb-3 form-check">
 												<input type="checkbox" class="form-check-input" id="exampleCheck1">
-												<label class="form-check-label" for="exampleCheck1">Remember me</label>
+												<label class="form-check-label modal-login-remembertext" for="exampleCheck1">Remember for 40
+													days</label>
 											</div>
-											<button type="submit" class="btn btn-primary w-100">Login</button>
+											<button type="submit" class="btn btn-primary w-100 mb-2">Sign in</button>
 										</form>
-										<div class="d-flex">
-											
+										<div>
+											<button class="btn btn-secondary w-100">
+												<i class="bi bi-google"></i>
+												Sign in with Google
+											</button>
 										</div>
 									</div>
 								</div>
@@ -147,10 +168,74 @@
 						</div>
 					</div>
 				</div>
-				<!--<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Understood</button>
-				</div>-->
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal Register -->
+	<div class="modal-register modal fade" id="modal-register" data-bs-backdrop="static" data-bs-keyboard="false"
+		tabindex="-1" aria-labelledby="modal-registerLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-register modal-body">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 ps-0">
+								<div class="modal-register-left">
+									<div class="modal-register-left-background banner-inazuma-cl">
+										<div class="modal-register-left-char char-xiao">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 pe-0 ps-0">
+								<div class="modal-register-right">
+									<div class="d-flex justify-content-end align-items-center">
+										<div class="me-auto">
+											<p class="modal-register-header-text">sign up/</p>
+										</div>
+										<div>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+									</div>
+									<div class="modal-register-area">
+										<div>
+											<h2 class="modal-register-title">Explore Midas</h2>
+										</div>
+										<form>
+											<div class="mb-2">
+												<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+													placeholder="youremail@here.com">
+												<!--<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>-->
+											</div>
+											<div class="mb-2">
+												<input type="password" class="form-control" id="exampleInputPassword1"
+													placeholder="your password">
+											</div>
+											<div class="mb-2">
+												<input type="password" class="form-control" id="exampleInputPassword1"
+													placeholder="confirm password">
+											</div>
+											<div class="mb-3 form-check">
+												<input type="checkbox" class="form-check-input" id="exampleCheck1">
+												<label class="form-check-label modal-register-remembertext" for="exampleCheck1">
+													Would you like to receive news by e-mail?
+												</label>
+											</div>
+											<button type="submit" class="btn btn-primary w-100 mb-2">Sign up</button>
+										</form>
+										<div>
+											<button class="btn btn-secondary w-100">
+												<i class="bi bi-google"></i>
+												Sign up with Google
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -201,7 +286,7 @@
 	</div>
 	<!-- Home -->
 	<main class="home-content" data-bs-spy="scroll" data-bs-target="#mainnavbar" data-bs-smooth-scroll="true">
-		<div class="effect-shadow" id="scrollhome">
+		<div class="effect-shadow" id="scrollHome">
 			<div class="banner">
 				<div class="banner-shadow-left"></div>
 				<video id="bg-mainVideo" autoplay loop muted class="bg-mainvideo"
@@ -283,7 +368,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="content-page" style="min-height: 4000px;">
+		<div class="content-page">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-2">
@@ -298,6 +383,8 @@
 								</div>
 							</div>
 							<div class="caption-hr"></div>
+							<video id="about-video" class="about-video" autoplay loop muted
+								src="../src/assets/videos/Aether-and-Paimon.mp4"></video>
 							<div class="caption-intro">
 								<p>Welcome to
 									<span tabindex="0" class="midas-name" data-bs-placement="top" data-bs-toggle="popover"
@@ -335,9 +422,202 @@
 							</div>
 						</div>
 						<!-- News -->
-						<div class="news-content" id="scrollNews">
+						<div class="community-content" id="scrollCommunity">
 							<div class="caption-frame">
 								<p class="caption-number">03.</p>
+								<div class="d-block">
+									<h3 class="caption-title"><span>について</span><br>Community</h3>
+								</div>
+							</div>
+							<div class="caption-hr"></div>
+							<div class="community-event-main-area">
+								<div class="row">
+									<div class="col-6">
+										<div class="community-main-event-area mt-4">
+											<div class="community-event-banner community-event-banner-pokelimpiadas"></div>
+											<div class="community-event-area mt-2">
+												<div class="d-flex justify-content-between align-items-center">
+													<div class="d-flex align-items-center">
+														<div class="community-event-profile community-event-profile-pokelimpiadas">
+														</div>
+														<div class="community-event-title">
+															<h5>Pokelimpiadas</h5>
+														</div>
+													</div>
+													<div class="community-event-available">
+														<div class="community-event-available-circle available-circle-yellow">
+														</div>
+														<div>
+															<p class="community-event-available-text available-text-yellow">Almost there</p>
+														</div>
+													</div>
+												</div>
+												<div class="d-flex align-items-center mt-2">
+													<div class="community-event-description">
+														<p>Sakura is a Genshin Impact duo tournament run by our stream community.</p>
+													</div>
+												</div>
+												<div class="d-flex justify-content-between">
+													<div class="community-event-dateandlocal">
+														<div class="community-event-date">
+															<p>27 Dec.– 01 Jan 2025</p>
+														</div>
+														<div class="community-event-local">
+															<p>twitch.tv/Midas</p>
+														</div>
+													</div>
+													<a href="" class="main-link">
+														Read More ↗
+													</a>
+												</div>
+												<!--<div class="border-light border-indigo mt-4"></div>-->
+											</div>
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="community-main-event-area mt-4">
+											<div class="community-event-banner community-event-banner-3sakura"></div>
+											<div class="community-event-area mt-2">
+												<div class="d-flex justify-content-between align-items-center">
+													<div class="d-flex align-items-center">
+														<div class="community-event-profile community-event-profile-3sakura">
+														</div>
+														<div class="community-event-title">
+															<h5>Sakura Cup Third edition</h5>
+														</div>
+													</div>
+													<div class="community-event-available">
+														<div class="community-event-available-circle available-circle-green">
+														</div>
+														<div>
+															<p class="community-event-available-text available-text-green">Available</p>
+														</div>
+													</div>
+												</div>
+												<div class="d-flex align-items-center mt-2">
+													<div class="community-event-description">
+														<p>Sakura is a Genshin Impact duo tournament run by our stream community.</p>
+													</div>
+												</div>
+												<div class="d-flex justify-content-between">
+													<div class="community-event-dateandlocal">
+														<div class="community-event-date">
+															<p>27 Dec.– 01 Jan 2025</p>
+														</div>
+														<div class="community-event-local">
+															<p>twitch.tv/Midas</p>
+														</div>
+													</div>
+													<a href="" class="main-link">
+														Read More ↗
+													</a>
+												</div>
+												<!--<div class="border-light border-indigo mt-4"></div>-->
+											</div>
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="community-main-event-area mt-4">
+											<div class="community-event-banner community-event-banner-2sakura"></div>
+											<div class="community-event-area mt-2">
+												<div class="d-flex justify-content-between align-items-center">
+													<div class="d-flex align-items-center">
+														<div class="community-event-profile community-event-profile-2sakura">
+														</div>
+														<div class="community-event-title">
+															<h5>Sakura Cup Second edition</h5>
+														</div>
+													</div>
+													<div class="community-event-available">
+														<div class="community-event-available-circle available-circle-red">
+														</div>
+														<div>
+															<p class="community-event-available-text available-text-red">Ended</p>
+														</div>
+													</div>
+												</div>
+												<div class="d-flex align-items-center mt-2">
+													<div class="community-event-description">
+														<p>Sakura is a Genshin Impact duo tournament run by our stream community.</p>
+													</div>
+												</div>
+												<div class="d-flex justify-content-between">
+													<div class="community-event-dateandlocal">
+														<div class="community-event-date">
+															<p>27 Dec.– 01 Jan 2025</p>
+														</div>
+														<div class="community-event-local">
+															<p>twitch.tv/Midas</p>
+														</div>
+													</div>
+													<a href="" class="main-link disabled">
+														Read More ↗
+													</a>
+												</div>
+											</div>
+											<!--<div class="border-light border-indigo mt-4"></div>-->
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="community-main-event-area mt-4">
+											<div class="community-event-banner community-event-banner-fuyunobudokai"></div>
+											<div class="community-event-area mt-2">
+												<div class="d-flex justify-content-between align-items-center">
+													<div class="d-flex align-items-center">
+														<div class="community-event-profile community-event-profile-fuyunobudokai">
+														</div>
+														<div class="community-event-title">
+															<h5>Fuyu no Budokai</h5>
+														</div>
+													</div>
+													<div class="community-event-available">
+														<div class="community-event-available-circle available-circle-green">
+														</div>
+														<div>
+															<p class="community-event-available-text available-text-green">Available</p>
+														</div>
+													</div>
+												</div>
+												<div class="d-flex align-items-center mt-2">
+													<div class="community-event-description">
+														<p>Sakura is a Genshin Impact duo tournament run by our stream community.</p>
+													</div>
+												</div>
+												<div class="d-flex justify-content-between">
+													<div class="community-event-dateandlocal">
+														<div class="community-event-date">
+															<p>27 Dec.– 01 Jan 2025</p>
+														</div>
+														<div class="community-event-local">
+															<p>twitch.tv/Midas</p>
+														</div>
+													</div>
+													<a href="" class="main-link">
+														Read More ↗
+													</a>
+												</div>
+												<!--<div class="border-light border-indigo mt-4"></div>-->
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="caption-signature">
+									<div>
+										<p class="fw-light">See the collection of<br><span class="fw-bold">Community</span></p>
+									</div>
+									<div class="ms-auto">
+										<a href="" class="main-link">
+											See More ↗
+										</a>
+									</div>
+								</div>
+							</div>
+							<!--<h4 class="caption-title"><span>について</span><br>Popular streamers</h4>-->
+						</div>
+						<!-- News -->
+						<div class="news-content" id="scrollNews">
+							<div class="caption-frame">
+								<p class="caption-number">04.</p>
 								<div class="d-block">
 									<h3 class="caption-title"><span>について</span><br>News and Articles</h3>
 								</div>
@@ -350,7 +630,7 @@
 								<div class="d-flex">
 									<div>
 										<p class="event-type-a me-0 mb-2">Main Article</p>
-										<div class="news-banner banner-eventarlecchino"></div>
+										<div class="news-banner banner-yelanguide"></div>
 									</div>
 									<div style="margin-left: 24px;">
 										<p class="event-type-b m-0">News Articles</p>
@@ -461,9 +741,9 @@
 
 						<div class="events-content" id="scrollEvents">
 							<div class="caption-frame">
-								<p class="caption-number">04.</p>
+								<p class="caption-number">05.</p>
 								<div class="d-block">
-									<h3 class="caption-title"><span>について</span><br>Events</h3>
+									<h3 class="caption-title"><span>について</span><br>Official events</h3>
 								</div>
 							</div>
 							<div class="caption-hr"></div>
@@ -555,11 +835,21 @@
 									</div>
 								</div>
 							</div>
+							<div class="caption-signature">
+								<div>
+									<p class="fw-light">See the collection of<br><span class="fw-bold">Events</span></p>
+								</div>
+								<div class="ms-auto">
+									<a href="" class="main-link">
+										See More ↗
+									</a>
+								</div>
+							</div>
 						</div>
 						<!-- Event Guides -->
 						<div class="guides-content" id="scrollGuides">
 							<div class="caption-frame">
-								<p class="caption-number">05.</p>
+								<p class="caption-number">06.</p>
 								<div class="d-block">
 									<h3 class="caption-title"><span>について</span><br>Guides</h3>
 								</div>
@@ -812,6 +1102,24 @@
 								</div>
 							</div>
 						</div>
+						<!--<div class="contact-content" id="scrollContact">
+							<div class="caption-frame">
+								<p class="caption-number">07.</p>
+								<div class="d-block">
+									<h3 class="caption-title"><span>について</span><br>Contact</h3>
+								</div>
+							</div>
+							<div class="caption-hr"></div>
+						</div>
+						<div class="othersgames-content" id="scrollOthersGames">
+							<div class="caption-frame">
+								<p class="caption-number">08.</p>
+								<div class="d-block">
+									<h3 class="caption-title"><span>について</span><br>Others Games</h3>
+								</div>
+							</div>
+							<div class="caption-hr"></div>
+						</div>-->
 					</div>
 					<div class="col-md-2">
 

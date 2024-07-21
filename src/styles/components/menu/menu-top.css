@@ -44,15 +44,15 @@ nav {
   left: auto;
   right: auto;
   top: 0;
-  min-width: 1002px;
+  min-width: 1100px;
 }
 
 .menu-logo {
   display: flex;
   align-items: center;
   margin-right: auto;
-  max-width: 240px; 
-  min-width: 240px;
+  max-width: 220px; 
+  min-width: 220px;
 }
 
 .menu-top-nav {
@@ -69,8 +69,8 @@ nav {
   display: flex;
   margin-left: auto;
   margin-right: 0;
-  max-width: 240px; 
-  min-width: 240px;
+  max-width: 220px; 
+  min-width: 220px;
   align-items: center;
   justify-content: right;
 }
@@ -84,6 +84,27 @@ nav {
   margin: 0 !important;
 }
 
+.menu-top-sign {
+  text-align: right;
+  line-height: 1;
+}
+
+.menu-top-sign button{
+  background-color: transparent !important;
+  border: none !important;
+  color: #212121 !important;
+  padding: 0 4px !important;
+  transition: 800ms;
+}
+
+.menu-top-sign button:hover{
+  background-color: transparent !important;
+  border: none !important;
+  color: var(--myindigo-90) !important;
+  padding: 0 4px !important;
+  transition: 800ms;
+}
+
 .menu-welcome-text span {
   text-align: right;
   font-weight: bold;
@@ -91,8 +112,6 @@ nav {
 }
 
 .menu-avatar {
-  background-image: url('../../../Assets/profile/avatar/avatar-main-b.jpg');
-  background-size: cover;
   border: 1px solid #d3def2;
   border-radius: 16px;
   position: relative;
@@ -100,6 +119,11 @@ nav {
   height: 54px;
   width: 54px;
   margin-left: 8px;
+}
+
+.menu-avatar-offline {
+  background-image: url('../../../Assets/profile/avatar/avatar-lumine.jpg');
+  background-size: cover;
 }
 
 .logo-text {
@@ -113,16 +137,18 @@ nav {
 }
 
 .logo-text p {
-  font-weight: medium;
+  font-weight: bold;
   text-transform: uppercase;
   font-size: 32px;
   font-family: 'ep-stellari';
   line-height: 1;
   margin-top: -8px !important;
+  margin-bottom: 0 !important;
 }
 
 .nav-link {
   padding: 4px 8px !important;
+  border-radius: 8px;
 }
 
 .nav-link:hover{
@@ -130,7 +156,7 @@ nav {
   border-radius: 8px !important;
   color: var(--myindigo) !important;
   background-color: var(--myindigo-20) !important;
-}
+} 
 
 .nav-link.active{
   background-color: var(--myindigo) !important;

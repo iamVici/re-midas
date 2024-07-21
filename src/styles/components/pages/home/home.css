@@ -12,13 +12,10 @@ body {
   overflow-x: hidden;
 }
 
-<<<<<<< HEAD
-=======
 nav {
   display: grid;
 }
 
->>>>>>> master
 .home-content {
   background-color: #181818;
 }
@@ -207,8 +204,7 @@ nav {
 }
 
 .banner-name {
-  color: var(--myindigo);
-  font-style: italic;
+  color: white;
   font-weight: bold;
   font-size: 48px;
   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
@@ -536,27 +532,3 @@ nav {
   max-height: 48px;
   padding: 8px !important;
 }
-
-
-.item-mora::before {
-  content: "";
-  background-image: url(../../../../src/assets/material/resources/Item_Mora.webp);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-}
-
-.item-primogem::before {
-  content: "";
-  background-image: url(../../../../src/assets/material/resources/Item_Primogem.webp);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-}
-

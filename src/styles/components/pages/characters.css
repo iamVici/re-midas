@@ -66,13 +66,10 @@
   background-image: url('../../../Assets/backgrounds/locations/inazuma/inazuma-pb.jpg');
 }
 
-<<<<<<< HEAD
-=======
 .banner-inazuma-cl {
   background-image: url('../../../Assets/backgrounds/locations/inazuma/inazuma-cl.jpg');
 }
 
->>>>>>> master
 .char-furina-full {
   background-image: url('../../../Assets/character/furina/Furina-full.png');
 }
@@ -108,3 +105,26 @@
   content: "";
   background-image: url(../../../../src/assets/material/elements/element-electro.webp);
 }
+
+.item-mora::before {
+  content: "";
+  background-image: url('../../../../src/assets/material/resources/Item_Mora.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.item-primogem::before {
+  content: "";
+  background-image: url('../../../../src/assets/material/resources/Item_Primogem.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+

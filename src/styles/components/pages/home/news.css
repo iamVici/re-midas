@@ -11,12 +11,8 @@
   border-radius: 16px;
 }
 
-.banner-eventarlecchino {
-<<<<<<< HEAD
+.banner-yelanguide {
   background-image: url('../../../../assets/backgrounds/events/yelancap.png');
-=======
-  background-image: url(../../../../assets/backgrounds/events/yelancap.png);
->>>>>>> master
 }
 
 .news-article:not(:first-child) {

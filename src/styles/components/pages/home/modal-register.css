@@ -1,25 +1,25 @@
-.modal-login .modal-header {
+.modal-register .modal-header {
   border-bottom: 0 !important;
   border-radius: 24px !important;
 }
 
-.modal-login .modal-header .btn-close {
+.modal-register .modal-header .btn-close {
 
 }
 
-.modal-login .modal-content {
+.modal-register .modal-content {
   border-radius: 24px;
 }
 
-.modal-login .modal-body {
+.modal-register .modal-body {
   height: 440px;
 }
 
-.modal-login-left {
+.modal-register-left {
   
 }
 
-.modal-login-left-background {
+.modal-register-left-background {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -27,7 +27,7 @@
   border-radius: 16px;
 }
 
-.modal-login-left-char {
+.modal-register-left-char {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -36,29 +36,29 @@
   height: 440px;
   scale: 1;
   top: -30px;
-  left: -64px;
+  left: -100px;
   position: relative;
   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.05));
 }
 
-.modal-login-right {
+.modal-register-right {
   z-index: 999;
   position: relative;
 }
 
-.modal-login-area {
+.modal-register-area {
   padding: 0 40px;
   height: 380px;
   align-content: center;
 }
 
-.modal-login-area .form-control {
+.modal-register-area .form-control {
   height: 48px;
   border-radius: 8px;
   background-color: var(--mygray-20);
 }
 
-.modal-login-header-text {
+.modal-register-header-text {
   color: var(--mygray);
   text-transform: uppercase;
   font-size: 14px;
@@ -67,7 +67,7 @@
   line-height: 1;
 }
 
-.modal-login-right .btn-close {
+.modal-register-right .btn-close {
   z-index: 999;
   position: relative;
   font-size: 10px !important;
@@ -75,7 +75,7 @@
   opacity: 1 !important;
 }
 
-.modal-login-title {
+.modal-register-title {
   font-weight: bold;
   margin-bottom: 16px !important;
   text-align: center;
@@ -101,20 +101,20 @@
   transition: 800ms;
 }
 
-.modal-login-moremethods {
+.modal-register-moremethods {
   display: flex;
 }
 
-.modal-login-moremethods hr {
+.modal-register-moremethods hr {
   height: 2px;
   width: auto;
 }
 
-.modal-login .form-check-label {
+.modal-register .form-check-label {
   color: var(--myblack-60)
 }
 
-.modal-login-remembertext {
+.modal-register-remembertext {
   font-size: 12px;
 }
 

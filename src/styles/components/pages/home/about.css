@@ -2,14 +2,8 @@
   margin: 32px 0;
 }
 
-.about-frame {
-  backdrop-filter: saturate(80%) blur(8px);
-  background-color: #ffffffb3;
-  border-radius: 0;
-  width: 100%;
-  min-height: 820px;
-  z-index: 998;
-  position: relative;
-  padding: 16px 24px;
-  margin-bottom: 16px;
+.about-video {
+  width: 100% !important;
+  height: 320px !important;
+  object-fit: cover !important;
 }
