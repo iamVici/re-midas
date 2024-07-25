@@ -42,6 +42,10 @@
   background-image: url('../../../Assets/Character/Raiden/raiden.png');
 }
 
+.face-raiden {
+  background-image: url("../../../Assets/character/Raiden/raiden-face.jpg");
+}
+
 .char-ganyu {
   background-image: url('../../../Assets/character/ganyu/ganyu.png');
 }
