@@ -21,7 +21,7 @@ nav {
 .menu-top ul li:not(:last-child)::after {
   content: " | ";
   color: #000;
-  padding: 0 8px 4px 8px;
+  padding: 0 4px;
 }
 
 .menu-top {
@@ -51,8 +51,8 @@ nav {
   display: flex;
   align-items: center;
   margin-right: auto;
-  max-width: 220px; 
-  min-width: 220px;
+  max-width: 200px; 
+  min-width: 200px;
 }
 
 .menu-top-nav {
@@ -61,7 +61,7 @@ nav {
   align-content: center;
   align-items: center;
   padding: 0 auto;
-  min-width: 440px;
+  min-width: 640px;
   place-content: center;
 }
 
@@ -69,8 +69,8 @@ nav {
   display: flex;
   margin-left: auto;
   margin-right: 0;
-  max-width: 220px; 
-  min-width: 220px;
+  max-width: 200px; 
+  min-width: 200px;
   align-items: center;
   justify-content: right;
 }

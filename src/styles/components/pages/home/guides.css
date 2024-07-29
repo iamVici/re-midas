@@ -2,6 +2,10 @@
   margin: 80px 0;
 }
 
+.guides-card-char {
+  margin-top: -16px !important;
+}
+
 .char-main-banner-area {
   width: 100%;
   background-color: #181818;
@@ -30,12 +34,10 @@
   background-color: var(--myred);
   color: var(--mywhite);
   text-transform: uppercase;
-  font-style: italic;
   font-weight: bold;
   top: 24px;
   right: -8px;
   position: absolute;
-  border-radius: 8px 0 8px 8px;
   line-height: 1;
   font-size: 16px;
   text-align: center;
@@ -107,7 +109,6 @@
 .char-main-banner-name {
   font-size: 32px;
   font-weight: bold;
-  font-style: italic;
   margin: 0;
   color: var(--mywhite);
   line-height: 1;
@@ -155,7 +156,6 @@
 }
 
 .char-main-banner-cover {
-  width: 320px;
   height: 180px;
   border-radius: 16px;
   background-size: cover;
@@ -259,6 +259,28 @@
   font-size: 14px;
 }
 
+.char-banner-weapon-content {
+  display: flex;
+  align-items: center;
+}
+
+.char-banner-weapon .icon-weapon {
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: 0;
+}
+
+.char-banner-weapon-content p {
+  margin: 0 !important;
+  padding-left: 2px;
+  color: var(--myblack-80);
+  font-size: 14px;
+}
+
 .char-banner-text {
   color: var(--myblack-50);
   font-size: 12px;
@@ -305,35 +327,22 @@
   border-radius: 24px;
 }
 
-.guides-area {
-
+.guides-area-char {
+  min-height: 440px;
+  position: relative;
 }
 
 .guides-header-area {
   display: flex;
-  background-color: var(--mywhite);
-  padding: 8px;
-  border-radius: 8px 8px 0 0;
 }
 
 .guides-header-char {
   background-color: #474747;
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   border-radius: 8px;
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-.guides-header-main-tag {
-  background-color: var(--myindigo);
-  width: 32px;
-  height: 56px;
-  margin-top: -16px;
-  position: relative;
-  z-index: 999;
-  margin-left: auto;
-  border-radius: 4px;
 }
 
 .guides-header {
@@ -343,6 +352,7 @@
 .guides-header-main-info {
   padding-left: 8px;
   align-content: center;
+  max-width: 160px;
 }
 
 .guides-link-area {
@@ -355,7 +365,7 @@
   color: var(--myblack-80);
   font-weight: bold;
   font-size: 20px;
-  margin-bottom: 0;
+  margin-bottom: 4px;
   line-height: 1;
 }
 
@@ -374,10 +384,15 @@
   height: 40px;
 }
 
-.guides-description-area {
+.guides-char-main-area {
+  min-height: 344px;
   background-color: var(--mywhite);
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+
+.guides-description-area {
   padding: 16px;
-  border-radius: 0 0 8px 8px;
 }
 
 .guides-link-right {
@@ -399,9 +414,345 @@
   border-radius: 8px;
   transform: rotate(45deg);
   z-index: 999;
-  margin-left: -20px; 
+  margin-left: -20px;
 }
 
 .guides-description-text {
   font-size: 14px;
+  color: var(--myblack-80);
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  display: -webkit-box;
+}
+
+.guides-description-info-area {
+  padding-top: 8px;
+  border-top: 1px solid var(--mygray-40);
+}
+
+.guieds-action-link {
+  background-color: var(--myindigo-20);
+  color: var(--myindigo) !important;
+  padding: 4px 8px;
+  font-size: 18px;
+  border-radius: 8px;
+  text-decoration: none !important;
+  font-weight: bolder;
+  align-content: center;
+  justify-content: center;
+  cursor: pointer;
+  line-height: 1;
+  transition: 800ms;
+}
+
+.guides-action-area {
+  display: flex;
+  align-items: center;
+  background-color: var(--mywhite);
+  padding: 16px;
+  border-radius: 0 0 8px 8px;
+  position: relative;
+  z-index: 998;
+}
+
+.guides-description-text-area {
+  margin-top: 8px;
+  max-height: 168px;
+  min-height: 168px;
+  overflow: hidden;
+}
+
+.flag-container {
+  margin-left: auto;
+  margin-right: 2px;
+  margin-top: -4px;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.flag {
+  width: 40px;
+  height: 64px;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -24px;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: 16px;
+  top: 56px;
+  z-index: 999;
+}
+
+.flag-char {
+  background-color: var(--myindigo);
+  color: var(--mywhite);
+}
+
+.guides-charview-area {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 344px;
+  width: 100%;
+  scale: 1.24;
+}
+
+.guides-charview-shadow {
+  background: linear-gradient(0deg, #f4f4f4 0,
+      rgba(244, 244, 244, 0.987) 8%, rgba(244, 244, 244, 0.951) 12%, rgba(244, 244, 244, 0.896) 16%,
+      rgba(244, 244, 244, 0.825) 20%, rgba(244, 244, 244, 0.741) 24%, rgba(244, 244, 244, 0.648) 28%,
+      rgba(244, 244, 244, 0.55) 32%, rgba(244, 244, 244, 0.45) 36%, rgba(244, 244, 244, 0.352) 40%,
+      rgba(244, 244, 244, 0.259) 44%, rgba(244, 244, 244, 0.175) 48%, rgba(244, 244, 244, 0.104) 52%,
+      rgba(244, 244, 244, 0.049) 56%, rgba(244, 244, 244, 0.013) 60%, rgba(244, 244, 244, 0) 64%);
+  position: absolute;
+  height: 320px;
+  width: 100%;
+  z-index: 9999;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.guides-lore-area {
+  max-height: 344px;
+  min-height: 344px;
+  padding: 16px;
+}
+
+.guides-lore-text-area {
+  max-height: 310px;
+  overflow: hidden;
+}
+
+.guides-lore-text {
+  font-size: 14px;
+  color: var(--myblack-60);
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 13;
+  display: -webkit-box;
+}
+
+.guides-lore-title {
+  font-size: 16px;
+  color: var(--myindigo);
+  padding: 4px 8px;
+  background-color: var(--myindigo-20);
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+  background-color: var(--myindigo) !important;
+  color: var(--mywhite) !important;
+  border-color: var(--myindigo) !important;
+}
+
+.btn-outline-primary {
+  background-color: var(--mywhite) !important;
+  color: var(--myindigo) !important;
+  border-color: var(--myindigo) !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--myindigo-20) !important;
+}
+
+.main-link-outline {
+  background-color: var(--mywhite) !important;
+  color: var(--myindigo) !important;
+  font-size: 16px !important;
+  padding: 4px 16px !important;
+  text-decoration: none !important;
+  transition: 400ms !important;
+}
+
+.main-link-outline:hover {
+  color: var(--myindigo-80) !important;
+  transition: 400ms !important;
+}
+
+.load-more {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 16px !important;
+}
+
+.btn-load {
+  border: 1px solid var(--myindigo) !important;
+  background-color: var(--myindigo) !important;
+  color: var(--mywhite) !important;
+  width: 264px;
+}
+
+.btn-loading {
+  display: flex;
+  align-items: center;
+  height: 42px !important;
+  align-content: center;
+  justify-content: center;
+  border: 1px solid var(--myindigo) !important;
+  border-radius: 4px;
+  background-color: var(--myindigo-20) !important;
+  color: var(--myindigo) !important;
+  width: 264px;
+  font-size: 16px !important;
+}
+
+.guides-header-weapon {
+  background-color: #474747;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+
+  overflow: hidden;
+}
+
+.weapon-avatar {
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
+  scale: 1.6;
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header-weapon-fivestars {
+  background-color: var(--mygold);
+}
+
+.header-weapon-fourstars {
+  background-color: var(--myindigo);
+}
+
+.header-weapon-threestars {
+  background-color: var(--myblue);
+}
+
+.guides-weapon-main-area {
+  min-height: 344px;
+  background-color: var(--mywhite);
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+
+.flag-weapon {
+  background-color: var(--myred);
+  color: var(--mywhite);
+}
+
+.material-symbols-rounded {
+  font-size: 16px !important;
+}
+
+.char-banner-text {
+  color: var(--myblack-50);
+  font-size: 12px;
+}
+
+.weapon-banner-level {
+  font-size: 14px;
+  padding: 2px 4px;
+  border-radius: 2px;
+  line-height: 1;
+  margin-bottom: 4px;
+  color: var(--mywhite);
+  background-color: var(--myindigo);
+  border: 1px solid var(--myindigo);
+}
+
+.guides-description-weapon-text {
+  font-size: 14px;
+  color: var(--myblack-80);
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  display: -webkit-box;
+}
+
+.guides-weapon-description-text-area {
+  margin-top: 8px;
+  max-height: 136px;
+  min-height: 136px;
+  overflow: hidden;
+}
+
+.guides-description-weapon-info-area {
+  padding-top: 8px;
+  margin-top: 8px;
+  border-top: 1px solid var(--mygray-40);
+}
+
+.guides-effect-title {
+  color: var(--myblack-50);
+  font-size: 12px;
+  border-bottom: 1px solid var(--mygray-40);
+  margin-bottom: 4px;
+}
+
+.guides-effect-description-text {
+  font-size: 14px;
+  color: var(--myblack-60);
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 12;
+  display: -webkit-box;
+}
+
+.guides-effect-area {
+  max-height: 344px;
+  min-height: 344px;
+  padding: 16px;
+}
+
+.guides-effect-area-text {
+  min-height: 272px;
+  max-height: 272px;
+  overflow: hidden;
+}
+
+.guides-effect-area-text span {
+  color: var(--myindigo);
+}
+
+.guides-area-weapon .nav-link {
+  border-radius: 0 !important;
+  color: var(--myindigo) !important;
+  border: none !important;
+  text-align: center;
+  width: 32px;
+  height: 32px;
+}
+
+.guides-area-weapon .nav-link:hover {
+  border-radius: 0 !important;
+}
+
+.guides-area-weapon .nav-link.active {
+  border-radius: 0 !important;
+}
+
+.nav.nav-tabs {
+  border: none !important;
+}
+
+.guides-effect-refinement-title {
+  font-size: 14px;
+  color: var(--myindigo);
+  line-height: 1;
+  align-self: center;
+  margin-right: auto;
+}
+
+.nav-tabs-refinement {
+  display: flex;
+  border-top: 1px solid var(--myindigo);
+  margin-top: 4px;
 }

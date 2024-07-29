@@ -5,6 +5,7 @@
 	<!-- Starting -->
 	<title>Re: Midas</title>
 	<meta name="description" content="Project Re: Midas">
+	<link rel="icon" type="image/x-icon" href="../src/assets/character/Raiden/raiden-face.jpg">
 	<meta name="author" content='Victor "Vici" Pires'>
 	<meta name="keywords" content="design, web development, portfolio, games, genhin impact">
 	<!-- Meta -->
@@ -26,6 +27,7 @@
 	<link rel="stylesheet" href="../src/styles/components/pages/home/modal-login.css">
 	<link rel="stylesheet" href="../src/styles/components/pages/home/modal-register.css">
 	<link rel="stylesheet" href="../src/styles/components/pages/characters.css">
+	<link rel="stylesheet" href="../src/styles/components/pages/weapons.css">
 	<!-- Styles -->
 	<link rel="stylesheet" href="../src/styles/components/menu/menu-left.css">
 	<link rel="stylesheet" href="../src/styles/components/menu/menu-top.css">
@@ -42,72 +44,121 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="../src/scripts/badass.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
 		crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
 </head>
 
 <body>
-	<!-- Menu Top -->
-	<nav id="mainnavbar">
-		<div class="menu-top">
-			<div class="menu-logo">
-				<div class="logo-text">
-					<span>project</span>
-					<p>Midas</p>
+	<header>
+		<!-- Menu Top -->
+		<nav id="mainnavbar">
+			<div class="menu-top">
+				<div class="menu-logo">
+					<div class="logo-text">
+						<span>project</span>
+						<p>Midas</p>
+					</div>
+				</div>
+				<div class="menu menu-top-nav">
+					<ul>
+						<li class="nav-item">
+							<a class="nav-link" href="#scrollHome">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#scrollAbout">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#scrollCommunity">Community</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#scrollNews">News</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#scrollEvents">Events</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#scrollGuides">Guides</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#scrollContact">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<div class="menu-profile">
+					<div class="menu-top-sign">
+						<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-register">
+							Sign up
+						</button>
+						<span>|</span>
+						<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-login">
+							Log in
+						</button>
+					</div>
+					<div class="menu-avatar menu-avatar-offline" data-bs-toggle="offcanvas" data-bs-target="#" aria-controls="">
+						<span class="profile-status position-absolute top-100 start-100 translate-middle">
+						</span>
+					</div>
 				</div>
 			</div>
-			<div class="menu menu-top-nav">
-				<ul>
-					<li class="nav-item">
-						<a class="nav-link" href="#scrollHome">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#scrollAbout">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#scrollCommunity">Community</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#scrollNews">News</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#scrollEvents">Events</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#scrollGuides">Guides</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#scrollContact">Contact</a>
-					</li>
-				</ul>
-			</div>
-			<div class="menu-profile">
-				<!-- Signed in
-				<div class="menu-welcome-text">
-					<p>Welcome back, <br><span>Vici</span>👋.</p>
-				</div>
-				<div class="menu-avatar" data-bs-toggle="offcanvas" data-bs-target="#" aria-controls="">
-					<span class="profile-status position-absolute top-100 start-100 translate-middle">
-					</span>
-				</div>-->
-				<div class="menu-top-sign">
-					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-register">
-						Sign up
-					</button>
-					<span>|</span>
-					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-login">
-						Log in
-					</button>
-				</div>
-				<div class="menu-avatar menu-avatar-offline" data-bs-toggle="offcanvas" data-bs-target="#" aria-controls="">
-					<span class="profile-status position-absolute top-100 start-100 translate-middle">
-					</span>
+		</nav>
+
+		<!-- Select Game Menu -->
+		<div class="select-menu-area">
+			<div class="select-menu-base">
+				<div class="select-menu-content">
+					<ul>
+						<!-- Genshin Impact -->
+						<li>
+							<a class="select-menu-link" href="" data-bs-toggle="tooltip" data-bs-placement="right"
+								data-bs-custom-class="select-menu-tooltip" data-bs-title="Genshin Impact">
+								<img class="select-menu-icon active" alt="" src="../src/assets/logo/logo-genshin.png">
+							</a>
+						</li>
+						<!-- Star Rail -->
+						<li>
+							<a class="select-menu-link offline" href="" data-bs-toggle="tooltip" data-bs-placement="right"
+								data-bs-custom-class="select-menu-tooltip offline" data-bs-title="Star Rail">
+								<img class="select-menu-icon" alt="" src="../src/assets/logo/logo-starrail.png">
+							</a>
+						</li>
+						<!-- Zenless Zone Zero -->
+						<li>
+							<a class="select-menu-link offline" href="" data-bs-toggle="tooltip" data-bs-placement="right"
+								data-bs-custom-class="select-menu-tooltip offline" data-bs-title="Zenless Zone Zero">
+								<img class="select-menu-icon" alt="" src="../src/assets/logo/logo-zenlesszonezero.png">
+							</a>
+						</li>
+						<!-- Whutering Waves -->
+						<li>
+							<a class="select-menu-link" href="" data-bs-toggle="tooltip" data-bs-placement="right"
+								data-bs-custom-class="select-menu-tooltip" data-bs-title="Whutering Waves">
+								<img class="select-menu-icon" alt="" src="../src/assets/logo/logo-whuteringwaves.png">
+							</a>
+						</li>
+						<!-- Reverse 1999 -->
+						<li>
+							<a class="select-menu-link" href="" data-bs-toggle="tooltip" data-bs-placement="right"
+								data-bs-custom-class="select-menu-tooltip" data-bs-title="Reverse 1999">
+								<img class="select-menu-icon" alt="" src="../src/assets/logo/logo-reverse.png">
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
-	</nav>
+	</header>
 
 	<!-- Modal Login -->
 	<div class="modal-login modal fade" id="modal-login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -143,7 +194,6 @@
 											<div class="mb-2">
 												<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
 													placeholder="youremail@here.com">
-												<!--<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>-->
 											</div>
 											<div class="mb-2">
 												<input type="password" class="form-control" id="exampleInputPassword1"
@@ -206,7 +256,6 @@
 											<div class="mb-2">
 												<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
 													placeholder="youremail@here.com">
-												<!--<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>-->
 											</div>
 											<div class="mb-2">
 												<input type="password" class="form-control" id="exampleInputPassword1"
@@ -240,50 +289,6 @@
 		</div>
 	</div>
 
-	<!-- Select Game Menu -->
-	<div class="select-menu-area">
-		<div class="select-menu-base">
-			<div class="select-menu-content">
-				<ul>
-					<!-- Genshin Impact -->
-					<li>
-						<a class="select-menu-link" href="" data-bs-toggle="tooltip" data-bs-placement="right"
-							data-bs-custom-class="select-menu-tooltip" data-bs-title="Genshin Impact">
-							<img class="select-menu-icon active" alt="" src="../src/assets/logo/logo-genshin.png">
-						</a>
-					</li>
-					<!-- Star Rail -->
-					<li>
-						<a class="select-menu-link offline" href="" data-bs-toggle="tooltip" data-bs-placement="right"
-							data-bs-custom-class="select-menu-tooltip offline" data-bs-title="Star Rail">
-							<img class="select-menu-icon" alt="" src="../src/assets/logo/logo-starrail.png">
-						</a>
-					</li>
-					<!-- Zenless Zone Zero -->
-					<li>
-						<a class="select-menu-link offline" href="" data-bs-toggle="tooltip" data-bs-placement="right"
-							data-bs-custom-class="select-menu-tooltip offline" data-bs-title="Zenless Zone Zero">
-							<img class="select-menu-icon" alt="" src="../src/assets/logo/logo-zenlesszonezero.png">
-						</a>
-					</li>
-					<!-- Whutering Waves -->
-					<li>
-						<a class="select-menu-link" href="" data-bs-toggle="tooltip" data-bs-placement="right"
-							data-bs-custom-class="select-menu-tooltip" data-bs-title="Whutering Waves">
-							<img class="select-menu-icon" alt="" src="../src/assets/logo/logo-whuteringwaves.png">
-						</a>
-					</li>
-					<!-- Reverse 1999 -->
-					<li>
-						<a class="select-menu-link" href="" data-bs-toggle="tooltip" data-bs-placement="right"
-							data-bs-custom-class="select-menu-tooltip" data-bs-title="Reverse 1999">
-							<img class="select-menu-icon" alt="" src="../src/assets/logo/logo-reverse.png">
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
 	<!-- Home -->
 	<main class="home-content" data-bs-spy="scroll" data-bs-target="#mainnavbar" data-bs-smooth-scroll="true">
 		<div class="effect-shadow" id="scrollHome">
@@ -297,7 +302,6 @@
 							<div style="width: 100%; text-align: left;">
 								<div class="d-flex" style="height: 200px;">
 									<div class="banner-intro">
-										<!--<h2 class="banner-tag">Character Guide</h2>-->
 										<h1 class="banner-name"><span>the Plane of Euthymia</span><br>Raiden Shogun</h1>
 										<div class="banner-hr"></div>
 										<p class="banner-quote">
@@ -405,15 +409,16 @@
 									true master in your favorite titles.
 								</p>
 								<p>See my other
-									<a class="main-link" href="">projects ↗</a> or the
-									<a class="main-link" href="">history of Midas changes ↗</a>.
+									<a class="main-text-link" href="">projects ↗</a> or the
+									<a class="main-text-link" href="">history of Midas changes ↗</a>.
 								</p>
 							</div>
 							<div class="caption-signature">
 								<div class="caption-author author-vici"></div>
 								<div class="author-content">
 									<div class="author-name name-vici">Vici</div>
-									<div class="author-quote">Aspiring Designer, Programmer and Raiden main.</div>
+									<div class="author-quote">Multimedia Designer, Front-End Developer, 3D Student and
+										Raiden main.</div>
 								</div>
 								<div class="author-link-area">
 									<a class="main-link icon-link" href="#" target="_blank">
@@ -603,7 +608,7 @@
 								</div>
 								<div class="caption-signature">
 									<div>
-										<p class="fw-light">See the collection of<br><span class="fw-bold">Community</span></p>
+										<p class="fw-light m-0 m-0">See the collection of<br><span class="fw-bold">Community</span></p>
 									</div>
 									<div class="ms-auto">
 										<a href="" class="main-link">
@@ -631,10 +636,17 @@
 									<div>
 										<p class="event-type-a me-0 mb-2">Main Article</p>
 										<div class="news-banner banner-yelanguide"></div>
-										<div class="d-flex">
-											<div class="news-banner-avatar"></div>
-											<div class="news-banner-title">
-												<h5>Character Spotlight: Yelan</h5>
+										<div class="news-banner-name">
+											<div class="d-flex align-items-center">
+												<div class="news-banner-avatar face-yelan"></div>
+												<div class="news-banner-title">
+													<h5 class="m-0">Yelan<br>Character Spotlight</h5>
+												</div>
+											</div>
+											<div class="ms-auto">
+												<a href="" class="main-link">
+													Read more ↗
+												</a>
 											</div>
 										</div>
 									</div>
@@ -734,7 +746,7 @@
 								</div>
 								<div class="caption-signature">
 									<div>
-										<p class="fw-light">See the collection of<br><span class="fw-bold">Articles</span></p>
+										<p class="fw-light m-0 m-0">See the collection of<br><span class="fw-bold">Articles</span></p>
 									</div>
 									<div class="ms-auto">
 										<a href="" class="main-link">
@@ -843,7 +855,7 @@
 							</div>
 							<div class="caption-signature">
 								<div>
-									<p class="fw-light">See the collection of<br><span class="fw-bold">Events</span></p>
+									<p class="fw-light m-0 m-0">See the collection of<br><span class="fw-bold">Events</span></p>
 								</div>
 								<div class="ms-auto">
 									<a href="" class="main-link">
@@ -900,19 +912,65 @@
 								</div>
 							</div>
 							<div class="row">
-								<!-- 1ºst Char -->
-								<div class="col-md-4" style="display: flex; justify-content: left;">
-									<div class="char-banner-area char-banner-furina">
-										<div class="char-tag-popular">Popular</div>
-										<div class="char-banner-background banner-inazuma">
-											<div class="char-banner char-furina-full"></div>
-											<div class="char-banner-description-area">
-												<div class="char-banner-description">
-													<div class="char-banner-name">
-														<h5>Furina</h5>
+								<!-- Baizhu -->
+								<div class="col-md-4 guides-card-char" id="card-baizhu">
+									<div class="guides-area-char">
+										<div class="flag flag-char">
+											<div class="flag-content">
+												<i class="bi bi-person-fill"></i>
+											</div>
+										</div>
+										<div class="guides-char-main-area">
+											<div class="guides-description-area">
+												<div class="guides-header-area">
+													<div class="guides-header-char face-baizhu">
 													</div>
-													<div class="d-flex mt-1">
-														<div class="d-flex" style="min-width: 88px;">
+													<div class="guides-header-main-info">
+														<div class="guides-header-main-name">
+															Baizhu
+														</div>
+														<div class="guides-header-main-title">
+															Owner of Bubu Pharmacy
+														</div>
+													</div>
+												</div>
+												<div class="guides-description-text-area">
+													<div class="char-banner-text">Spotlight:</div>
+													<p class="guides-description-text">
+														Baizhu is a Dendro catalyst user who heals allies and creates protective shields. His skills
+														focus on regenerating HP and providing team support, making him essential for team
+														survivability.
+													</p>
+												</div>
+												<div class="guides-description-info-area">
+													<div class="row w-100">
+														<div class="col">
+															<div class="char-banner-element">
+																<div class="char-banner-text">
+																	Role:
+																</div>
+																<div class="char-banner-element-content">
+																	<p>Healer</p>
+																</div>
+															</div>
+														</div>
+														<div class="col">
+															<div class="d-flex" style="min-width: 88px;">
+																<div class="char-banner-rarity me-auto">
+																	<div class="char-banner-text">
+																		Weapon:
+																	</div>
+																	<div class="char-banner-weapon-content char-banner-weapon">
+																		<div class="icon-weapon weapon-catalyst">
+																		</div>
+																		<p>Catalyst</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="row w-100">
+														<div class="col">
 															<div class="char-banner-rarity me-auto">
 																<div class="char-banner-text">
 																	Rarity:
@@ -926,123 +984,131 @@
 																</div>
 															</div>
 														</div>
-														<div class="char-banner-element" style="min-width: 80px;">
-															<div class="char-banner-text">
-																Role:
-															</div>
-															<div class="char-banner-element-content">
-																<div class="icon-element element-anemo">
-																</div>
-																<p>Main Dps</p>
-															</div>
-														</div>
-													</div>
-													<div class="d-flex mt-1">
-														<div class="d-flex" style="min-width: 88px;">
-															<div class="char-banner-rarity me-auto">
+														<div class="col">
+															<div class="char-banner-element">
 																<div class="char-banner-text">
-																	Weapon:
+																	Element:
 																</div>
 																<div class="char-banner-element-content">
-																	<div class="icon-element element-anemo">
+																	<div class="icon-element element-dendro">
 																	</div>
-																	<p>Main Dps</p>
+																	<p>Dendro</p>
 																</div>
-															</div>
-														</div>
-														<div class="char-banner-element" style="min-width: 80px;">
-															<div class="char-banner-text">
-																Element:
-															</div>
-															<div class="char-banner-element-content">
-																<div class="icon-element element-anemo">
-																</div>
-																<p>Anemo</p>
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
+											<div class="guides-lore-area hidden">
+												<div class="guides-lore-text-area">
+													<div class="guides-lore-title">
+														Story Summary
+													</div>
+													<p class="guides-lore-text">
+														Baizhu is the owner of Bubu Pharmacy in Liyue, known for his vast knowledge of herbal
+														medicine and his unique approach to healthcare. Despite his frail health, Baizhu dedicates
+														himself to finding a cure for his chronic illness, driven by a deep compassion for others
+														suffering from ailments. He is always accompanied by his mysterious talking snake,
+														Changsheng, who seems to have a profound connection with him. Baizhu's calm demeanor and
+														enigmatic aura make him a respected figure in Liyue, where people seek his expertise and
+														unconventional treatments. His journey is one of perseverance and hope, as he tirelessly
+														searches for remedies that could heal not only himself but also countless others.
+														<span>[...]</span>
+													</p>
+												</div>
+											</div>
+											<div class="guides-charview-area card-baizhu hidden">
+												<div class="guides-charview-shadow"></div>
+											</div>
+										</div>
+										<div class="guides-link-area">
+											<div class="d-flex align-content-center">
+												<div class="guides-link-left me-auto"></div>
+												<div class="guides-link-right ms-auto"></div>
+											</div>
+										</div>
+										<div class="guides-action-area">
+											<div class="d-flex me-auto">
+												<div class="btn-group" role="group" aria-label="">
+													<input type="radio" class="btn-check" name="btnradio-baizhu" id="btndescription-baizhu"
+														autocomplete="off" checked>
+													<label class="btn btn-outline-primary" for="btndescription-baizhu">
+														<i class="fa-solid fa-square-poll-horizontal"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-baizhu" id="btnlore-baizhu"
+														autocomplete="off">
+													<label class="btn btn-outline-primary" for="btnlore-baizhu">
+														<i class="fa-solid fa-book"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-baizhu" id="btncharview-baizhu"
+														autocomplete="off">
+													<label class="btn btn-outline-primary" for="btncharview-baizhu">
+														<i class="fa-solid fa-eye"></i>
+													</label>
+												</div>
+											</div>
+											<a class="main-link main-link-outline">See More ↗</a>
 										</div>
 									</div>
 								</div>
-								<!-- 2ºnd Char -->
-								<div class="col-md-4" style="display: flex; justify-content: center;">
-									<div class="char-banner-area char-banner-xiao">
-										<div class="char-banner-background banner-inazuma">
-											<div class="char-banner char-xiao-full"></div>
-											<div class="char-banner-description-area">
-												<div class="char-banner-description">
-													<div class="char-banner-name">
-														<h5>Xiao</h5>
+								<!-- Beidou -->
+								<div class="col-md-4 guides-card-char" id="card-beidou">
+									<div class="guides-area-char">
+										<div class="flag flag-char">
+											<div class="flag-content">
+												<i class="bi bi-person-fill"></i>
+											</div>
+										</div>
+										<div class="guides-char-main-area">
+											<div class="guides-description-area">
+												<div class="guides-header-area">
+													<div class="guides-header-char face-beidou">
 													</div>
-													<div class="d-flex mt-1">
-														<div class="d-flex" style="min-width: 88px;">
-															<div class="char-banner-rarity me-auto">
-																<div class="char-banner-text">
-																	Rarity:
-																</div>
-																<div class="char-stars">
-																	<i class="bi bi-star-fill"></i>
-																	<i class="bi bi-star-fill"></i>
-																	<i class="bi bi-star-fill"></i>
-																	<i class="bi bi-star-fill"></i>
-																	<i class="bi bi-star-fill"></i>
-																</div>
-															</div>
+													<div class="guides-header-main-info">
+														<div class="guides-header-main-name">
+															Beidou
 														</div>
-														<div class="char-banner-element" style="min-width: 80px;">
-															<div class="char-banner-text">
-																Role:
-															</div>
-															<div class="char-banner-element-content">
-																<div class="icon-element element-anemo">
-																</div>
-																<p>Main Dps</p>
-															</div>
+														<div class="guides-header-main-title">
+															Queen of the Crux Fleet
 														</div>
 													</div>
-													<div class="d-flex mt-1">
-														<div class="d-flex" style="min-width: 88px;">
-															<div class="char-banner-rarity me-auto">
+												</div>
+												<div class="guides-description-text-area">
+													<div class="char-banner-text">Spotlight:</div>
+													<p class="guides-description-text">
+														Beidou is an Electro claymore user specializing in counterattacks and AoE damage. Her
+														abilities enhance her strength and resistance, making her a powerful front-line fighter.
+													</p>
+												</div>
+												<div class="guides-description-info-area">
+													<div class="row w-100">
+														<div class="col">
+															<div class="char-banner-element">
 																<div class="char-banner-text">
-																	Weapon:
+																	Role:
 																</div>
 																<div class="char-banner-element-content">
-																	<div class="icon-element element-anemo">
-																	</div>
 																	<p>Main Dps</p>
 																</div>
 															</div>
 														</div>
-														<div class="char-banner-element" style="min-width: 80px;">
-															<div class="char-banner-text">
-																Element:
-															</div>
-															<div class="char-banner-element-content">
-																<div class="icon-element element-anemo">
+														<div class="col">
+															<div class="d-flex" style="min-width: 88px;">
+																<div class="char-banner-rarity me-auto">
+																	<div class="char-banner-text">
+																		Weapon:
+																	</div>
+																	<div class="char-banner-weapon-content char-banner-weapon">
+																		<div class="icon-weapon weapon-claymore">
+																		</div>
+																		<p>Claymore</p>
+																	</div>
 																</div>
-																<p>Anemo</p>
 															</div>
 														</div>
 													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- 3ºrd Char -->
-								<div class="col-md-4" style="display: flex; justify-content: right;">
-									<div class="char-banner-area char-banner-fischl">
-										<div class="char-banner-background banner-inazuma">
-											<div class="char-banner char-fischl-full"></div>
-											<div class="char-banner-description-area">
-												<div class="char-banner-description">
-													<div class="char-banner-name">
-														<h5>Fischl</h5>
-													</div>
-													<div class="d-flex mt-1">
-														<div class="d-flex" style="min-width: 88px;">
+													<div class="row w-100">
+														<div class="col">
 															<div class="char-banner-rarity me-auto">
 																<div class="char-banner-text">
 																	Rarity:
@@ -1056,62 +1122,40 @@
 																</div>
 															</div>
 														</div>
-														<div class="char-banner-element" style="min-width: 80px;">
-															<div class="char-banner-text">
-																Role:
-															</div>
-															<div class="char-banner-element-content">
-																<div class="icon-element element-anemo">
-																</div>
-																<p>Main Dps</p>
-															</div>
-														</div>
-													</div>
-													<div class="d-flex mt-1">
-														<div class="d-flex" style="min-width: 88px;">
-															<div class="char-banner-rarity me-auto">
+														<div class="col">
+															<div class="char-banner-element">
 																<div class="char-banner-text">
-																	Weapon:
+																	Element:
 																</div>
 																<div class="char-banner-element-content">
-																	<div class="icon-element element-anemo">
+																	<div class="icon-element element-electro">
 																	</div>
-																	<p>Main Dps</p>
+																	<p>Electro</p>
 																</div>
-															</div>
-														</div>
-														<div class="char-banner-element" style="min-width: 80px;">
-															<div class="char-banner-text">
-																Element:
-															</div>
-															<div class="char-banner-element-content">
-																<div class="icon-element element-anemo">
-																</div>
-																<p>Anemo</p>
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-4">
-									<div class="guides-area">
-										<div class="guides-header-area">
-											<div class="guides-header-char face-raiden">
-											</div>
-											<div class="guides-header-main-info">
-												<div class="guides-header-main-name">
-													Raiden
-												</div>
-												<div class="guides-header-main-title">
-													The Plane of Euthymia
+											<div class="guides-lore-area hidden">
+												<div class="guides-lore-text-area">
+													<div class="guides-lore-title">
+														Story Summary
+													</div>
+													<p class="guides-lore-text">
+														Beidou is the fearless captain of the Crux Fleet, known throughout Liyue for her strength,
+														bravery, and seafaring skills. She commands a crew of loyal sailors and navigates the
+														treacherous seas with ease. Beidou's reputation as a powerful warrior is matched only by her
+														free-spirited nature and love for adventure. Despite her rough exterior, she has a deep
+														sense of justice and often stands up for the underdog. Beidou's journey is one of defying
+														expectations and challenging the limits of what a human can achieve, all while enjoying the
+														thrill of the open sea and the camaraderie of her crew.
+													</p>
 												</div>
 											</div>
-											<div class="guides-header-main-tag"></div>
+											<div class="guides-charview-area card-beidou hidden">
+												<div class="guides-charview-shadow"></div>
+											</div>
 										</div>
 										<div class="guides-link-area">
 											<div class="d-flex align-content-center">
@@ -1119,70 +1163,1000 @@
 												<div class="guides-link-right ms-auto"></div>
 											</div>
 										</div>
-										<div class="guides-description-area">
-											<div>
-												<p class="guides-description-text">
-													The Raiden Shogun exists in two forms — Ei, her true identity, and the Shogun, a puppet created by Ei
-													<span>[...]</span>
-												</p>
-											</div>
-											<div class="d-flex mt-1">
-												<div class="d-flex" style="min-width: 88px;">
-													<div class="char-banner-rarity me-auto">
-														<div class="char-banner-text">
-															Rarity:
-														</div>
-														<div class="char-stars">
-															<i class="bi bi-star-fill"></i>
-															<i class="bi bi-star-fill"></i>
-															<i class="bi bi-star-fill"></i>
-															<i class="bi bi-star-fill"></i>
-															<i class="bi bi-star"></i>
-														</div>
-													</div>
-												</div>
-												<div class="char-banner-element" style="min-width: 80px;">
-													<div class="char-banner-text">
-														Role:
-													</div>
-													<div class="char-banner-element-content">
-														<div class="icon-element element-anemo">
-														</div>
-														<p>Main Dps</p>
-													</div>
+										<div class="guides-action-area">
+											<div class="d-flex me-auto">
+												<div class="btn-group" role="group" aria-label="">
+													<input type="radio" class="btn-check" name="btnradio-beidou" id="btndescription-beidou"
+														autocomplete="off" checked>
+													<label class="btn btn-outline-primary" for="btndescription-beidou">
+														<i class="fa-solid fa-square-poll-horizontal"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-beidou" id="btnlore-beidou"
+														autocomplete="off">
+													<label class="btn btn-outline-primary" for="btnlore-beidou">
+														<i class="fa-solid fa-book"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-beidou" id="btncharview-beidou"
+														autocomplete="off">
+													<label class="btn btn-outline-primary" for="btncharview-beidou">
+														<i class="fa-solid fa-eye"></i>
+													</label>
 												</div>
 											</div>
-											<div class="d-flex mt-1">
-												<div class="d-flex" style="min-width: 88px;">
-													<div class="char-banner-rarity me-auto">
-														<div class="char-banner-text">
-															Weapon:
-														</div>
-														<div class="char-banner-element-content">
-															<div class="icon-element element-anemo">
-															</div>
-															<p>Main Dps</p>
-														</div>
-													</div>
-												</div>
-												<div class="char-banner-element" style="min-width: 80px;">
-													<div class="char-banner-text">
-														Element:
-													</div>
-													<div class="char-banner-element-content">
-														<div class="icon-element element-anemo">
-														</div>
-														<p>Anemo</p>
-													</div>
-												</div>
-											</div>
+											<a class="main-link main-link-outline">See More ↗</a>
 										</div>
 									</div>
 								</div>
+								<!-- Eula -->
+								<div class="col-md-4 guides-card-char" id="card-eula">
+									<div class="guides-area-char">
+										<div class="flag flag-char">
+											<div class="flag-content">
+												<i class="bi bi-person-fill"></i>
+											</div>
+										</div>
+										<div class="guides-char-main-area">
+											<div class="guides-description-area">
+												<div class="guides-header-area">
+													<div class="guides-header-char face-eula">
+													</div>
+													<div class="guides-header-main-info">
+														<div class="guides-header-main-name">
+															Eula
+														</div>
+														<div class="guides-header-main-title">
+															Spindrift Knight
+														</div>
+													</div>
+												</div>
+												<div class="guides-description-text-area">
+													<div class="char-banner-text">Spotlight:</div>
+													<p class="guides-description-text">
+														Eula is a Cryo claymore user focused on physical damage and powerful combos. Her skills
+														grant shields and unleash massive Cryo attacks, making her a formidable damage dealer.
+													</p>
+												</div>
+												<div class="guides-description-info-area">
+													<div class="row w-100">
+														<div class="col">
+															<div class="char-banner-element">
+																<div class="char-banner-text">
+																	Role:
+																</div>
+																<div class="char-banner-element-content">
+																	<p>Main DPS</p>
+																</div>
+															</div>
+														</div>
+														<div class="col">
+															<div class="d-flex" style="min-width: 88px;">
+																<div class="char-banner-rarity me-auto">
+																	<div class="char-banner-text">
+																		Weapon:
+																	</div>
+																	<div class="char-banner-weapon-content char-banner-weapon">
+																		<div class="icon-weapon weapon-claymore">
+																		</div>
+																		<p>Claymore</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="row w-100">
+														<div class="col">
+															<div class="char-banner-rarity me-auto">
+																<div class="char-banner-text">
+																	Rarity:
+																</div>
+																<div class="char-stars">
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																</div>
+															</div>
+														</div>
+														<div class="col">
+															<div class="char-banner-element">
+																<div class="char-banner-text">
+																	Element:
+																</div>
+																<div class="char-banner-element-content">
+																	<div class="icon-element element-cryo">
+																	</div>
+																	<p>Cryo</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="guides-lore-area hidden">
+												<div class="guides-lore-text-area">
+													<div class="guides-lore-title">
+														Story Summary
+													</div>
+													<p class="guides-lore-text">
+														Eula is the Spindrift Knight and the captain of the Reconnaissance Company of the Knights of
+														Favonius in Mondstadt. Born into the infamous Lawrence Clan, which was once known for its
+														oppressive rule, Eula has dedicated her life to redeeming her family name. She is a
+														formidable warrior with a reputation for her cold and aloof demeanor. Despite her
+														aristocratic background, Eula has earned the respect of her comrades through her hard work,
+														skill, and unwavering sense of justice. Her journey is one of overcoming prejudice and
+														proving that one's lineage does not define their character.
+													</p>
+												</div>
+											</div>
+											<div class="guides-charview-area card-eula hidden">
+												<div class="guides-charview-shadow"></div>
+											</div>
+										</div>
+										<div class="guides-link-area">
+											<div class="d-flex align-content-center">
+												<div class="guides-link-left me-auto"></div>
+												<div class="guides-link-right ms-auto"></div>
+											</div>
+										</div>
+										<div class="guides-action-area">
+											<div class="d-flex me-auto">
+												<div class="btn-group" role="group" aria-label="">
+													<input type="radio" class="btn-check" name="btnradio-eula" id="btndescription-eula"
+														autocomplete="off" checked>
+													<label class="btn btn-outline-primary" for="btndescription-eula">
+														<i class="fa-solid fa-square-poll-horizontal"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-eula" id="btnlore-eula"
+														autocomplete="off">
+													<label class="btn btn-outline-primary" for="btnlore-eula">
+														<i class="fa-solid fa-book"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-eula" id="btncharview-eula"
+														autocomplete="off">
+													<label class="btn btn-outline-primary" for="btncharview-eula">
+														<i class="fa-solid fa-eye"></i>
+													</label>
+												</div>
+											</div>
+											<a class="main-link main-link-outline">See More ↗</a>
+										</div>
+									</div>
+								</div>
+								<!-- Hutao -->
+								<div class="col-md-4 guides-card-char hidden" id="card-hutao">
+									<div class="guides-area-char">
+										<div class="flag flag-char">
+											<div class="flag-content">
+												<i class="bi bi-person-fill"></i>
+											</div>
+										</div>
+										<div class="guides-char-main-area">
+											<div class="guides-description-area">
+												<div class="guides-header-area">
+													<div class="guides-header-char face-hutao">
+													</div>
+													<div class="guides-header-main-info">
+														<div class="guides-header-main-name">
+															Hutao
+														</div>
+														<div class="guides-header-main-title">
+															77th-Gen. Director of the Wangsheng Funeral Parlor
+														</div>
+													</div>
+												</div>
+												<div class="guides-description-text-area">
+													<div class="char-banner-text">Spotlight:</div>
+													<p class="guides-description-text">
+														Hutao is a Pyro polearm user with a high-risk, high-reward playstyle. Her skills boost
+														attack power at the cost of HP, dealing significant Pyro damage and healing herself.
+													</p>
+												</div>
+												<div class="guides-description-info-area">
+													<div class="row w-100">
+														<div class="col">
+															<div class="char-banner-element">
+																<div class="char-banner-text">
+																	Role:
+																</div>
+																<div class="char-banner-element-content">
+																	<p>Main Dps</p>
+																</div>
+															</div>
+														</div>
+														<div class="col">
+															<div class="d-flex" style="min-width: 88px;">
+																<div class="char-banner-rarity me-auto">
+																	<div class="char-banner-text">
+																		Weapon:
+																	</div>
+																	<div class="char-banner-weapon-content char-banner-weapon">
+																		<div class="icon-weapon weapon-polearm">
+																		</div>
+																		<p>Polearm</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="row w-100">
+														<div class="col">
+															<div class="char-banner-rarity me-auto">
+																<div class="char-banner-text">
+																	Rarity:
+																</div>
+																<div class="char-stars">
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																</div>
+															</div>
+														</div>
+														<div class="col">
+															<div class="char-banner-element">
+																<div class="char-banner-text">
+																	Element:
+																</div>
+																<div class="char-banner-element-content">
+																	<div class="icon-element element-pyro">
+																	</div>
+																	<p>Pyro</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="guides-lore-area hidden">
+												<div class="guides-lore-text-area">
+													<div class="guides-lore-title">
+														Story Summary
+													</div>
+													<p class="guides-lore-text">
+														Hutao is the 77th Director of the Wangsheng Funeral Parlor in Liyue. Known for her eccentric
+														and lively personality, she approaches her role with a unique blend of humor and respect for
+														the deceased. Despite her young age, Hutao takes her responsibilities seriously and is
+														highly skilled in her profession. She has a deep understanding of life and death, which she
+														uses to comfort those who have lost loved ones. Hutao's journey is one of balancing her
+														playful nature with the solemn duties of her role, bringing light to even the darkest
+														moments.
+													</p>
+												</div>
+											</div>
+											<div class="guides-charview-area card-hutao hidden">
+												<div class="guides-charview-shadow"></div>
+											</div>
+										</div>
+										<div class="guides-link-area">
+											<div class="d-flex align-content-center">
+												<div class="guides-link-left me-auto"></div>
+												<div class="guides-link-right ms-auto"></div>
+											</div>
+										</div>
+										<div class="guides-action-area">
+											<div class="d-flex me-auto">
+												<div class="btn-group" role="group" aria-label="">
+													<input type="radio" class="btn-check" name="btnradio-hutao" id="btndescription-hutao"
+														autocomplete="off" checked>
+													<label class="btn btn-outline-primary" for="btndescription-hutao">
+														<i class="fa-solid fa-square-poll-horizontal"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-hutao" id="btnlore-hutao"
+														autocomplete="off">
+													<label class="btn btn-outline-primary" for="btnlore-hutao">
+														<i class="fa-solid fa-book"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-hutao" id="btncharview-hutao"
+														autocomplete="off">
+													<label class="btn btn-outline-primary" for="btncharview-hutao">
+														<i class="fa-solid fa-eye"></i>
+													</label>
+												</div>
+											</div>
+											<a class="main-link main-link-outline">See More ↗</a>
+										</div>
+									</div>
+								</div>
+								<!-- Mona -->
+								<div class="col-md-4 guides-card-char hidden" id="card-mona">
+									<div class="guides-area-char">
+										<div class="flag flag-char">
+											<div class="flag-content">
+												<i class="bi bi-person-fill"></i>
+											</div>
+										</div>
+										<div class="guides-char-main-area">
+											<div class="guides-description-area">
+												<div class="guides-header-area">
+													<div class="guides-header-char face-mona">
+													</div>
+													<div class="guides-header-main-info">
+														<div class="guides-header-main-name">
+															Mona
+														</div>
+														<div class="guides-header-main-title">
+															Astrologist
+														</div>
+													</div>
+												</div>
+												<div class="guides-description-text-area">
+													<div class="char-banner-text">Spotlight:</div>
+													<p class="guides-description-text">
+														Mona is a Hydro catalyst user excelling in AoE damage and battlefield control. Her skills
+														taunt enemies and trap them, dealing significant Hydro damage.
+													</p>
+												</div>
+												<div class="guides-description-info-area">
+													<div class="row w-100">
+														<div class="col">
+															<div class="char-banner-element">
+																<div class="char-banner-text">
+																	Role:
+																</div>
+																<div class="char-banner-element-content">
+																	<p>Support</p>
+																</div>
+															</div>
+														</div>
+														<div class="col">
+															<div class="d-flex" style="min-width: 88px;">
+																<div class="char-banner-rarity me-auto">
+																	<div class="char-banner-text">
+																		Weapon:
+																	</div>
+																	<div class="char-banner-weapon-content char-banner-weapon">
+																		<div class="icon-weapon weapon-catalyst">
+																		</div>
+																		<p>Catalyst</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="row w-100">
+														<div class="col">
+															<div class="char-banner-rarity me-auto">
+																<div class="char-banner-text">
+																	Rarity:
+																</div>
+																<div class="char-stars">
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																</div>
+															</div>
+														</div>
+														<div class="col">
+															<div class="char-banner-element">
+																<div class="char-banner-text">
+																	Element:
+																</div>
+																<div class="char-banner-element-content">
+																	<div class="icon-element element-hydro">
+																	</div>
+																	<p>Hydro</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="guides-lore-area hidden">
+												<div class="guides-lore-text-area">
+													<div class="guides-lore-title">
+														Story Summary
+													</div>
+													<p class="guides-lore-text">
+														Mona is a highly skilled astrologist from Mondstadt, known for her accurate and insightful
+														readings. Despite her immense talent, she lives a frugal life due to her disdain for
+														material wealth and her dedication to pursuing knowledge. Mona is confident and outspoken,
+														often coming across as arrogant, but she has a deep sense of integrity and a genuine desire
+														to help others. Her journey is one of mastering the arcane arts and uncovering the secrets
+														of the stars, all while navigating the challenges of living true to her principles.
+													</p>
+												</div>
+											</div>
+											<div class="guides-charview-area card-mona hidden">
+												<div class="guides-charview-shadow"></div>
+											</div>
+										</div>
+										<div class="guides-link-area">
+											<div class="d-flex align-content-center">
+												<div class="guides-link-left me-auto"></div>
+												<div class="guides-link-right ms-auto"></div>
+											</div>
+										</div>
+										<div class="guides-action-area">
+											<div class="d-flex me-auto">
+												<div class="btn-group" role="group" aria-label="">
+													<input type="radio" class="btn-check" name="btnradio-mona" id="btndescription-mona"
+														autocomplete="off" checked>
+													<label class="btn btn-outline-primary" for="btndescription-mona">
+														<i class="fa-solid fa-square-poll-horizontal"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-mona" id="btnlore-mona"
+														autocomplete="off">
+													<label class="btn btn-outline-primary" for="btnlore-mona">
+														<i class="fa-solid fa-book"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-mona" id="btncharview-mona"
+														autocomplete="off">
+													<label class="btn btn-outline-primary" for="btncharview-mona">
+														<i class="fa-solid fa-eye"></i>
+													</label>
+												</div>
+											</div>
+											<a class="main-link main-link-outline">See More ↗</a>
+										</div>
+									</div>
+								</div>
+								<!-- Nilou -->
+								<div class="col-md-4 guides-card-char hidden" id="card-nilou">
+									<div class="guides-area-char">
+										<div class="flag flag-char">
+											<div class="flag-content">
+												<i class="bi bi-person-fill"></i>
+											</div>
+										</div>
+										<div class="guides-char-main-area">
+											<div class="guides-description-area">
+												<div class="guides-header-area">
+													<div class="guides-header-char face-nilou">
+													</div>
+													<div class="guides-header-main-info">
+														<div class="guides-header-main-name">
+															Nilou
+														</div>
+														<div class="guides-header-main-title">
+															The Dancer of the Avidya Forest
+														</div>
+													</div>
+												</div>
+												<div class="guides-description-text-area">
+													<div class="char-banner-text">Spotlight:</div>
+													<p class="guides-description-text">
+														Nilou is a Hydro sword user who supports allies and deals consistent Hydro damage. Her
+														skills heal teammates and amplify Hydro damage, making her a valuable support.
+													</p>
+												</div>
+												<div class="guides-description-info-area">
+													<div class="row w-100">
+														<div class="col">
+															<div class="char-banner-element">
+																<div class="char-banner-text">
+																	Role:
+																</div>
+																<div class="char-banner-element-content">
+																	<p>Support</p>
+																</div>
+															</div>
+														</div>
+														<div class="col">
+															<div class="d-flex" style="min-width: 88px;">
+																<div class="char-banner-rarity me-auto">
+																	<div class="char-banner-text">
+																		Weapon:
+																	</div>
+																	<div class="char-banner-weapon-content char-banner-weapon">
+																		<div class="icon-weapon weapon-sword">
+																		</div>
+																		<p>Sword</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="row w-100">
+														<div class="col">
+															<div class="char-banner-rarity me-auto">
+																<div class="char-banner-text">
+																	Rarity:
+																</div>
+																<div class="char-stars">
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																</div>
+															</div>
+														</div>
+														<div class="col">
+															<div class="char-banner-element">
+																<div class="char-banner-text">
+																	Element:
+																</div>
+																<div class="char-banner-element-content">
+																	<div class="icon-element element-hydro">
+																	</div>
+																	<p>Hydro</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="guides-lore-area hidden">
+												<div class="guides-lore-text-area">
+													<div class="guides-lore-title">
+														Story Summary
+													</div>
+													<p class="guides-lore-text">
+														Nilou is a renowned dancer from Sumeru, celebrated for her mesmerizing performances that
+														combine grace and elemental magic. Born into a family of performers, she has dedicated her
+														life to perfecting her craft and bringing joy to audiences. Despite her gentle demeanor,
+														Nilou is determined and disciplined, always striving to push the boundaries of her art. Her
+														journey is one of pursuing passion and inspiring others, all while staying true to her roots
+														and the traditions of her homeland.
+													</p>
+												</div>
+											</div>
+											<div class="guides-charview-area card-nilou hidden">
+												<div class="guides-charview-shadow"></div>
+											</div>
+										</div>
+										<div class="guides-link-area">
+											<div class="d-flex align-content-center">
+												<div class="guides-link-left me-auto"></div>
+												<div class="guides-link-right ms-auto"></div>
+											</div>
+										</div>
+										<div class="guides-action-area">
+											<div class="d-flex me-auto">
+												<div class="btn-group" role="group" aria-label="">
+													<input type="radio" class="btn-check" name="btnradio-nilou" id="btndescription-nilou"
+														autocomplete="off" checked>
+													<label class="btn btn-outline-primary" for="btndescription-nilou">
+														<i class="fa-solid fa-square-poll-horizontal"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-nilou" id="btnlore-nilou"
+														autocomplete="off">
+													<label class="btn btn-outline-primary" for="btnlore-nilou">
+														<i class="fa-solid fa-book"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-nilou" id="btncharview-nilou"
+														autocomplete="off">
+													<label class="btn btn-outline-primary" for="btncharview-nilou">
+														<i class="fa-solid fa-eye"></i>
+													</label>
+												</div>
+											</div>
+											<a class="main-link main-link-outline">See More ↗</a>
+										</div>
+									</div>
+								</div>
+								<!-- Xiao -->
+								<div class="col-md-4 guides-card-char hidden" id="card-xiao">
+									<div class="guides-area-char">
+										<div class="flag flag-char">
+											<div class="flag-content">
+												<i class="bi bi-person-fill"></i>
+											</div>
+										</div>
+										<div class="guides-char-main-area">
+											<div class="guides-description-area">
+												<div class="guides-header-area">
+													<div class="guides-header-char face-xiao">
+													</div>
+													<div class="guides-header-main-info">
+														<div class="guides-header-main-name">
+															Xiao
+														</div>
+														<div class="guides-header-main-title">
+															Guardian Yaksha
+														</div>
+													</div>
+												</div>
+												<div class="guides-description-text-area">
+													<div class="char-banner-text">Spotlight:</div>
+													<p class="guides-description-text">
+														Xiao is an Anemo polearm user with high mobility and single-target damage. His skills allow
+														for quick dashes and powerful Anemo attacks, making him an agile damage dealer.
+													</p>
+												</div>
+												<div class="guides-description-info-area">
+													<div class="row w-100">
+														<div class="col">
+															<div class="char-banner-element">
+																<div class="char-banner-text">
+																	Role:
+																</div>
+																<div class="char-banner-element-content">
+																	<p>Main Dps</p>
+																</div>
+															</div>
+														</div>
+														<div class="col">
+															<div class="d-flex" style="min-width: 88px;">
+																<div class="char-banner-rarity me-auto">
+																	<div class="char-banner-text">
+																		Weapon:
+																	</div>
+																	<div class="char-banner-weapon-content char-banner-weapon">
+																		<div class="icon-weapon weapon-polearm">
+																		</div>
+																		<p>Polearm</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="row w-100">
+														<div class="col">
+															<div class="char-banner-rarity me-auto">
+																<div class="char-banner-text">
+																	Rarity:
+																</div>
+																<div class="char-stars">
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																</div>
+															</div>
+														</div>
+														<div class="col">
+															<div class="char-banner-element">
+																<div class="char-banner-text">
+																	Element:
+																</div>
+																<div class="char-banner-element-content">
+																	<div class="icon-element element-anemo">
+																	</div>
+																	<p>Anemo</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="guides-lore-area hidden">
+												<div class="guides-lore-text-area">
+													<div class="guides-lore-title">
+														Story Summary
+													</div>
+													<p class="guides-lore-text">
+														Xiao is one of the adepti, an ancient guardian deity of Liyue known as the "Conqueror of
+														Demons." He has fought countless battles against evil spirits and demons, often working
+														alone to protect the region. Despite his stoic and distant demeanor, Xiao is deeply
+														committed to his duty and harbors a heavy burden from his past. His journey is one of
+														redemption and sacrifice, as he continues to protect Liyue from the shadows while grappling
+														with the lingering effects of his long and arduous battles.
+													</p>
+												</div>
+											</div>
+											<div class="guides-charview-area card-xiao hidden">
+												<div class="guides-charview-shadow"></div>
+											</div>
+										</div>
+										<div class="guides-link-area">
+											<div class="d-flex align-content-center">
+												<div class="guides-link-left me-auto"></div>
+												<div class="guides-link-right ms-auto"></div>
+											</div>
+										</div>
+										<div class="guides-action-area">
+											<div class="d-flex me-auto">
+												<div class="btn-group" role="group" aria-label="">
+													<input type="radio" class="btn-check" name="btnradio-xiao" id="btndescription-xiao"
+														autocomplete="off" checked>
+													<label class="btn btn-outline-primary" for="btndescription-xiao">
+														<i class="fa-solid fa-square-poll-horizontal"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-xiao" id="btnlore-xiao"
+														autocomplete="off">
+													<label class="btn btn-outline-primary" for="btnlore-xiao">
+														<i class="fa-solid fa-book"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-xiao" id="btncharview-xiao"
+														autocomplete="off">
+													<label class="btn btn-outline-primary" for="btncharview-xiao">
+														<i class="fa-solid fa-eye"></i>
+													</label>
+												</div>
+											</div>
+											<a class="main-link main-link-outline">See More ↗</a>
+										</div>
+									</div>
+								</div>
+								<!-- Raiden -->
+								<div class="col-md-4 guides-card-char hidden" id="card-raiden">
+									<div class="guides-area-char">
+										<div class="flag flag-char">
+											<div class="flag-content">
+												<i class="bi bi-person-fill"></i>
+											</div>
+										</div>
+										<div class="guides-char-main-area">
+											<div class="guides-description-area">
+												<div class="guides-header-area">
+													<div class="guides-header-char face-raiden">
+													</div>
+													<div class="guides-header-main-info">
+														<div class="guides-header-main-name">
+															Raiden
+														</div>
+														<div class="guides-header-main-title">
+															The Plane of Euthymia
+														</div>
+													</div>
+												</div>
+												<div class="guides-description-text-area">
+													<div class="char-banner-text">Spotlight:</div>
+													<p class="guides-description-text">
+														Raiden is an Electro polearm user who provides burst damage and energy regeneration. Her
+														skills boost energy recharge for allies and deal massive Electro damage.
+													</p>
+												</div>
+												<div class="guides-description-info-area">
+													<div class="row w-100">
+														<div class="col">
+															<div class="char-banner-element">
+																<div class="char-banner-text">
+																	Role:
+																</div>
+																<div class="char-banner-element-content">
+																	<p>Main Dps</p>
+																</div>
+															</div>
+														</div>
+														<div class="col">
+															<div class="d-flex" style="min-width: 88px;">
+																<div class="char-banner-rarity me-auto">
+																	<div class="char-banner-text">
+																		Weapon:
+																	</div>
+																	<div class="char-banner-weapon-content char-banner-weapon">
+																		<div class="icon-weapon weapon-polearm">
+																		</div>
+																		<p>Polearm</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="row w-100">
+														<div class="col">
+															<div class="char-banner-rarity me-auto">
+																<div class="char-banner-text">
+																	Rarity:
+																</div>
+																<div class="char-stars">
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star"></i>
+																</div>
+															</div>
+														</div>
+														<div class="col">
+															<div class="char-banner-element">
+																<div class="char-banner-text">
+																	Element:
+																</div>
+																<div class="char-banner-element-content">
+																	<div class="icon-element element-electro">
+																	</div>
+																	<p>Electro</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="guides-lore-area hidden">
+												<div class="guides-lore-text-area">
+													<div class="guides-lore-title">
+														Story Summary
+													</div>
+													<p class="guides-lore-text">
+														Raiden Shogun, also known as Ei, is the Electro Archon and ruler of Inazuma. She is
+														dedicated to achieving eternity for her nation, enforcing strict laws to maintain order and
+														stability. Behind her seemingly unyielding exterior lies a complex character burdened by
+														loss and the weight of her responsibilities. As a leader, she seeks to preserve the ideals
+														of her people while grappling with the challenges of maintaining a timeless vision. Raiden's
+														journey is one of balancing power and compassion, as she strives to guide Inazuma through
+														tumultuous times while honoring the memory of her loved ones.
+													</p>
+												</div>
+											</div>
+
+											<div class="guides-charview-area card-raiden hidden">
+												<div class="guides-charview-shadow"></div>
+											</div>
+										</div>
+										<div class="guides-link-area">
+											<div class="d-flex align-content-center">
+												<div class="guides-link-left me-auto"></div>
+												<div class="guides-link-right ms-auto"></div>
+											</div>
+										</div>
+										<div class="guides-action-area">
+											<div class="d-flex me-auto">
+												<div class="btn-group" role="group" aria-label="">
+													<input type="radio" class="btn-check" name="btnradio-raiden" id="btndescription-raiden"
+														autocomplete="off" checked>
+													<label class="btn btn-outline-primary" for="btndescription-raiden">
+														<i class="fa-solid fa-square-poll-horizontal"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-raiden" id="btnlore-raiden"
+														autocomplete="off">
+													<label class="btn btn-outline-primary" for="btnlore-raiden">
+														<i class="fa-solid fa-book"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-raiden" id="btncharview-raiden"
+														autocomplete="off">
+													<label class="btn btn-outline-primary" for="btncharview-raiden">
+														<i class="fa-solid fa-eye"></i>
+													</label>
+												</div>
+											</div>
+											<a class="main-link main-link-outline">See More ↗</a>
+										</div>
+									</div>
+								</div>
+								<!-- Zhongli -->
+								<div class="col-md-4 guides-card-char hidden" id="card-zhongli">
+									<div class="guides-area-char">
+										<div class="flag flag-char">
+											<div class="flag-content">
+												<i class="bi bi-person-fill"></i>
+											</div>
+										</div>
+										<div class="guides-char-main-area">
+											<div class="guides-description-area">
+												<div class="guides-header-area">
+													<div class="guides-header-char face-zhongli">
+													</div>
+													<div class="guides-header-main-info">
+														<div class="guides-header-main-name">
+															Zhongli
+														</div>
+														<div class="guides-header-main-title">
+															Vago Mundo
+														</div>
+													</div>
+												</div>
+												<div class="guides-description-text-area">
+													<div class="char-banner-text">Spotlight:</div>
+													<p class="guides-description-text">
+														Zhongli is a Geo polearm user providing shields and burst damage. His skills create strong
+														shields and summon a meteor for significant Geo damage, enhancing team survivability and
+														control.
+													</p>
+												</div>
+												<div class="guides-description-info-area">
+													<div class="row w-100">
+														<div class="col">
+															<div class="char-banner-element">
+																<div class="char-banner-text">
+																	Role:
+																</div>
+																<div class="char-banner-element-content">
+																	<p>Support</p>
+																</div>
+															</div>
+														</div>
+														<div class="col">
+															<div class="d-flex" style="min-width: 88px;">
+																<div class="char-banner-rarity me-auto">
+																	<div class="char-banner-text">
+																		Weapon:
+																	</div>
+																	<div class="char-banner-weapon-content char-banner-weapon">
+																		<div class="icon-weapon weapon-polearm">
+																		</div>
+																		<p>Polearm</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="row w-100">
+														<div class="col">
+															<div class="char-banner-rarity me-auto">
+																<div class="char-banner-text">
+																	Rarity:
+																</div>
+																<div class="char-stars">
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																</div>
+															</div>
+														</div>
+														<div class="col">
+															<div class="char-banner-element">
+																<div class="char-banner-text">
+																	Element:
+																</div>
+																<div class="char-banner-element-content">
+																	<div class="icon-element element-geo">
+																	</div>
+																	<p>Geo</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="guides-lore-area hidden">
+												<div class="guides-lore-text-area">
+													<div class="guides-lore-title">
+														Story Summary
+													</div>
+													<p class="guides-lore-text">
+														Zhongli, also known as Rex Lapis, is the former Geo Archon of Liyue and now lives as a
+														consultant for the Wangsheng Funeral Parlor. Known for his wisdom and deep knowledge of
+														history and culture, Zhongli is a refined and composed individual. Despite stepping down
+														from his position as Archon, he remains deeply connected to the people of Liyue, guiding
+														them with his insights and experience. His journey is one of transitioning from a god to a
+														mortal, embracing the joys and challenges of a more ordinary life while continuing to
+														protect and support his beloved city.
+													</p>
+												</div>
+											</div>
+											<div class="guides-charview-area card-zhongli hidden">
+												<div class="guides-charview-shadow"></div>
+											</div>
+										</div>
+										<div class="guides-link-area">
+											<div class="d-flex align-content-center">
+												<div class="guides-link-left me-auto"></div>
+												<div class="guides-link-right ms-auto"></div>
+											</div>
+										</div>
+										<div class="guides-action-area">
+											<div class="d-flex me-auto">
+												<div class="btn-group" role="group" aria-label="">
+													<input type="radio" class="btn-check" name="btnradio-zhongli" id="btndescription-zhongli"
+														autocomplete="off" checked>
+													<label class="btn btn-outline-primary" for="btndescription-zhongli">
+														<i class="fa-solid fa-square-poll-horizontal"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-zhongli" id="btnlore-zhongli"
+														autocomplete="off">
+													<label class="btn btn-outline-primary" for="btnlore-zhongli">
+														<i class="fa-solid fa-book"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-zhongli" id="btncharview-zhongli"
+														autocomplete="off">
+													<label class="btn btn-outline-primary" for="btncharview-zhongli">
+														<i class="fa-solid fa-eye"></i>
+													</label>
+												</div>
+											</div>
+											<a class="main-link main-link-outline">See More ↗</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="load-more">
+									<button id="load-more" class="btn btn-primary main-link btn-load ">
+										Load more
+									</button>
+
+									<div id="spinner" role="status" class="hidden" margin: auto;">
+										<button class="btn-loading" type="button" disabled>
+											<span class="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
+											<span role="status ms-2">Loading...</span>
+										</button>
+									</div>
+								</div>
+
 							</div>
 							<div class="caption-signature">
 								<div>
-									<p class="fw-light">See the collection of<br><span class="fw-bold">Character guides</span></p>
+									<p class="fw-light m-0 m	'-0">See the collection of<br><span class="fw-bold">Characters</span></p>
 								</div>
 								<div class="ms-auto">
 									<a href="" class="main-link">
@@ -1190,8 +2164,1006 @@
 									</a>
 								</div>
 							</div>
+
+							<div class="row">
+								<!-- Veridict -->
+								<div class="col-md-4 guides-card-weapon" id="card-veridict">
+									<div class="guides-area-weapon">
+										<div class="flag flag-weapon">
+											<div class="flag-content">
+												<span class="material-symbols-rounded">
+													swords
+												</span>
+											</div>
+										</div>
+										<div class="guides-weapon-main-area">
+											<div class="guides-description-area">
+												<div class="guides-header-area">
+													<div class="guides-header-weapon header-weapon-fivestars">
+														<div class="weapon-avatar weapon-veridict">
+														</div>
+													</div>
+													<div class="guides-header-main-info">
+														<div class="guides-header-main-name mb-0">
+															Veridict
+														</div>
+													</div>
+												</div>
+												<div class="guides-weapon-description-text-area">
+													<div class="char-banner-text">Spotlight:</div>
+													<p class="guides-description-weapon-text">
+														A sword used by a young maiden who has abandoned her family name, stained with the blood of
+														enemies and relatives.
+													</p>
+												</div>
+												<div class="weapon-banner-level">Lv. 90</div>
+												<div class="row w-100">
+													<div class="col">
+														<div class="char-banner-text">
+															Base Atk:
+														</div>
+														<div class="char-banner-element-content">
+															<p>674</p>
+														</div>
+													</div>
+													<div class="col">
+														<div class="char-banner-text">
+															Crit Rate:
+														</div>
+														<div class="char-banner-element-content">
+															<p>22.1%</p>
+														</div>
+													</div>
+												</div>
+												<div class="guides-description-weapon-info-area">
+													<div class="row w-100">
+														<div class="col">
+															<div class="char-banner-rarity me-auto">
+																<div class="char-banner-text">
+																	Weapon:
+																</div>
+																<div class="char-banner-weapon-content char-banner-weapon">
+																	<div class="icon-weapon weapon-claymore">
+																	</div>
+																	<p>Claymore</p>
+																</div>
+															</div>
+														</div>
+														<div class="col">
+															<div class="char-banner-rarity me-auto">
+																<div class="char-banner-text">
+																	Rarity:
+																</div>
+																<div class="char-stars">
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="guides-effect-area hidden">
+												<div class="guides-effect-area-text">
+													<div class="guides-effect-title">
+														Many Oaths of Dawn and Dusk
+													</div>
+													<div class="tab-content guides-effect-description-text" id="Refinementveridict">
+														<div class="tab-pane fade show active" id="refinement-veridict-1" role="tabpanel"
+															aria-labelledby="refinement-veridict-1-tab">
+															Increases ATK by <span>20%</span>. <br>When characters in your party obtain
+															Elemental Shards from Crystallize reactions, the equipping character will gain 1 Seal,
+															increasing Elemental Skill DMG by <span>18%</span>. The Seal lasts for 15s,
+															and the equipper may have up to 2 Seals at once. All of the equipper's Seals will
+															disappear
+															0.2s
+															after their Elemental Skill deals DMG.
+														</div>
+														<div class="tab-pane fade" id="refinement-veridict-2" role="tabpanel"
+															aria-labelledby="refinement-veridict-2-tab">
+															Increases ATK by <span>25%</span>. <br>When characters in your party obtain
+															Elemental Shards from Crystallize reactions, the equipping character will gain 1 Seal,
+															increasing Elemental Skill DMG by <span>22.5%</span>. The Seal lasts for 15s,
+															and the equipper may have up to 2 Seals at once. All of the equipper's Seals will
+															disappear
+															0.2s
+															after their Elemental Skill deals DMG.
+														</div>
+														<div class="tab-pane fade" id="refinement-veridict-3" role="tabpanel"
+															aria-labelledby="refinement-veridict-3-tab">
+															Increases ATK by <span>30%</span>. <br>When characters in your party obtain
+															Elemental Shards from Crystallize reactions, the equipping character will gain 1 Seal,
+															increasing Elemental Skill DMG by <span>27%</span>. The Seal lasts for 15s,
+															and the equipper may have up to 2 Seals at once. All of the equipper's Seals will
+															disappear
+															0.2s
+															after their Elemental Skill deals DMG.
+														</div>
+														<div class="tab-pane fade" id="refinement-veridict-4" role="tabpanel"
+															aria-labelledby="refinement-veridict-4-tab">
+															Increases ATK by <span>35%</span>. <br>When characters in your party obtain
+															Elemental Shards from Crystallize reactions, the equipping character will gain 1 Seal,
+															increasing Elemental Skill DMG by <span>31.5%</span>. The Seal lasts for 15s,
+															and the equipper may have up to 2 Seals at once. All of the equipper's Seals will
+															disappear
+															0.2s
+															after their Elemental Skill deals DMG.
+														</div>
+														<div class="tab-pane fade" id="refinement-veridict-5" role="tabpanel"
+															aria-labelledby="refinement-veridict-5-tab">
+															Increases ATK by <span>40%</span>. <br>When characters in your party obtain
+															Elemental Shards from Crystallize reactions, the equipping character will gain 1 Seal,
+															increasing Elemental Skill DMG by <span>36%</span>. The Seal lasts for 15s,
+															and the equipper may have up to 2 Seals at once. All of the equipper's Seals will
+															disappear
+															0.2s
+															after their Elemental Skill deals DMG.
+														</div>
+													</div>
+												</div>
+												<div class="nav-tabs-refinement">
+													<div class="guides-effect-refinement-title">
+														Refinement:
+													</div>
+													<div class="ms-auto">
+														<ul class="nav nav-tabs " id="Refinementveridict" role="tablist">
+															<li class="nav-item">
+																<a class="nav-link active" id="refinement-veridict-1-tab" data-toggle="tab"
+																	href="#refinement-veridict-1" role="tab" aria-controls="refinement-veridict-1"
+																	aria-selected="true">1</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" id="refinement-veridict-2-tab" data-toggle="tab"
+																	href="#refinement-veridict-2" role="tab" aria-controls="refinement-veridict-2"
+																	aria-selected="false">2</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" id="refinement-veridict-3-tab" data-toggle="tab"
+																	href="#refinement-veridict-3" role="tab" aria-controls="refinement-3"
+																	aria-selected="false">3</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" id="refinement-veridict-4-tab" data-toggle="tab"
+																	href="#refinement-veridict-4" role="tab" aria-controls="refinement-4"
+																	aria-selected="false">4</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" id="refinement-veridict-5-tab" data-toggle="tab"
+																	href="#refinement-veridict-5" role="tab" aria-controls="refinement-veridict-5"
+																	aria-selected="false">5</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+
+											</div>
+											<div class="guides-lore-area hidden">
+												<div class="guides-lore-text-area">
+													<div class="guides-lore-title">
+														Story Summary
+													</div>
+													<p class="guides-lore-text">
+														erdict's description begins several years before the Siege of Poisson, and gives an
+														account
+														of how the noblewoman Leticia Randolph came to be associated with the Fleuve Cendre.
+														Leticia
+														fell in love with Reed and abandoned her Randolph identity to live in the Fleuve Cendre
+														with
+														him, "[taking] on the name of the rose" instead. Between the descriptions of Verdict and
+														Fleuve Cendre Ferryman, it can be deduced that Leticia and her husband are the same people
+														as Rosa and Thompson Reed, two members of Eduardo Baker's faction involved in the
+														occupation
+														of Poisson and the subsequent Siege of Poisson.
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="guides-link-area">
+											<div class="d-flex align-content-center">
+												<div class="guides-link-left me-auto"></div>
+												<div class="guides-link-right ms-auto"></div>
+											</div>
+										</div>
+										<div class="guides-action-area">
+											<div class="d-flex me-auto">
+												<div class="btn-group" role="group" aria-label="">
+													<input type="radio" class="btn-check" name="btnradio-veridict" id="btndescription-veridict"
+														autocomplete="off" checked>
+													<label class="btn btn-outline-primary" for="btndescription-veridict">
+														<i class="fa-solid fa-square-poll-horizontal"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-veridict" id="btneffect-veridict"
+														autocomplete="off">
+													<label class="btn btn-outline-primary" for="btneffect-veridict">
+														<i class="fa-solid fa-fire-flame-curved"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-veridict" id="btnlore-veridict"
+														autocomplete="off">
+													<label class="btn btn-outline-primary" for="btnlore-veridict">
+														<i class="fa-solid fa-book"></i>
+													</label>
+												</div>
+											</div>
+											<a class="main-link main-link-outline">See More ↗</a>
+										</div>
+									</div>
+								</div>
+
+								<!-- Wolf's Gravestone -->
+								<div class="col-md-4 guides-card-weapon" id="card-wolfs-gravestone">
+									<div class="guides-area-weapon">
+										<div class="flag flag-weapon">
+											<div class="flag-content">
+												<span class="material-symbols-rounded">
+													swords
+												</span>
+											</div>
+										</div>
+										<div class="guides-weapon-main-area">
+											<div class="guides-description-area">
+												<div class="guides-header-area">
+													<div class="guides-header-weapon header-weapon-fivestars">
+														<div class="weapon-avatar weapon-wolfs-gravestone">
+														</div>
+													</div>
+													<div class="guides-header-main-info">
+														<div class="guides-header-main-name mb-0">
+															Wolf's Gravestone
+														</div>
+													</div>
+												</div>
+												<div class="guides-weapon-description-text-area">
+													<div class="char-banner-text">Spotlight:</div>
+													<p class="guides-description-weapon-text">
+														A greatsword once worn by the wolf knight. It calls upon the power of the wolf to cut
+														straight through the heart of corruption.
+													</p>
+												</div>
+												<div class="weapon-banner-level">Lv. 90</div>
+												<div class="row w-100">
+													<div class="col">
+														<div class="char-banner-text">
+															Base Atk:
+														</div>
+														<div class="char-banner-element-content">
+															<p>608</p>
+														</div>
+													</div>
+													<div class="col">
+														<div class="char-banner-text">
+															ATK Bonus:
+														</div>
+														<div class="char-banner-element-content">
+															<p>49.6%</p>
+														</div>
+													</div>
+												</div>
+												<div class="guides-description-weapon-info-area">
+													<div class="row w-100">
+														<div class="col">
+															<div class="char-banner-rarity me-auto">
+																<div class="char-banner-text">
+																	Weapon:
+																</div>
+																<div class="char-banner-weapon-content char-banner-weapon">
+																	<div class="icon-weapon weapon-claymore">
+																	</div>
+																	<p>Claymore</p>
+																</div>
+															</div>
+														</div>
+														<div class="col">
+															<div class="char-banner-rarity me-auto">
+																<div class="char-banner-text">
+																	Rarity:
+																</div>
+																<div class="char-stars">
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="guides-effect-area hidden">
+												<div class="guides-effect-area-text">
+													<div class="guides-effect-title">
+														Wolfish Tracker
+													</div>
+													<div class="tab-content guides-effect-description-text" id="RefinementTab-wolfsgravestone">
+														<div class="tab-pane fade show active" id="refinement-wolfsgravestone-1" role="tabpanel"
+															aria-labelledby="refinement-wolfsgravestone-1-tab">
+															Increases ATK by <span>20%</span>. On hit, attacks against opponents with less than 30% HP
+															increase all party members' ATK by <span>40%</span> for 12s. Can only occur once every
+															30s.
+														</div>
+														<div class="tab-pane fade" id="refinement-wolfsgravestone-2" role="tabpanel"
+															aria-labelledby="refinement-wolfsgravestone-2-tab">
+															Increases ATK by <span>25%</span>. On hit, attacks against opponents with less than 30% HP
+															increase all party members' ATK by <span>50%</span> for 12s. Can only occur once every
+															30s.
+														</div>
+														<div class="tab-pane fade" id="refinement-wolfsgravestone-3" role="tabpanel"
+															aria-labelledby="refinement-wolfsgravestone-3-tab">
+															Increases ATK by <span>30%</span>. On hit, attacks against opponents with less than 30% HP
+															increase all party members' ATK by <span>60%</span> for 12s. Can only occur once every
+															30s.
+														</div>
+														<div class="tab-pane fade" id="refinement-wolfsgravestone-4" role="tabpanel"
+															aria-labelledby="refinement-wolfsgravestone-4-tab">
+															Increases ATK by <span>35%</span>. On hit, attacks against opponents with less than 30% HP
+															increase all party members' ATK by <span>70%</span> for 12s. Can only occur once every
+															30s.
+														</div>
+														<div class="tab-pane fade" id="refinement-wolfsgravestone-5" role="tabpanel"
+															aria-labelledby="refinement-wolfsgravestone-5-tab">
+															Increases ATK by <span>40%</span>. On hit, attacks against opponents with less than 30% HP
+															increase all party members' ATK by <span>80%</span> for 12s. Can only occur once every
+															30s.
+														</div>
+													</div>
+												</div>
+												<div class="nav-tabs-refinement">
+													<div class="guides-effect-refinement-title">
+														Refinement:
+													</div>
+													<div class="ms-auto">
+														<ul class="nav nav-tabs " id="RefinementTab" role="tablist">
+															<li class="nav-item">
+																<a class="nav-link active" id="refinement-wolfsgravestone-1-tab" data-toggle="tab"
+																	href="#refinement-wolfsgravestone-1" role="tab"
+																	aria-controls="refinement-wolfsgravestone-1" aria-selected="true">1</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" id="refinement-wolfsgravestone-2-tab" data-toggle="tab"
+																	href="#refinement-wolfsgravestone-2" role="tab"
+																	aria-controls="refinement-wolfsgravestone-2" aria-selected="false">2</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" id="refinement-wolfsgravestone-3-tab" data-toggle="tab"
+																	href="#refinement-wolfsgravestone-3" role="tab"
+																	aria-controls="refinement-wolfsgravestone-3" aria-selected="false">3</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" id="refinement-wolfsgravestone-4-tab" data-toggle="tab"
+																	href="#refinement-wolfsgravestone-4" role="tab"
+																	aria-controls="refinement-wolfsgravestone-4" aria-selected="false">4</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" id="refinement-wolfsgravestone-5-tab" data-toggle="tab"
+																	href="#refinement-wolfsgravestone-5" role="tab"
+																	aria-controls="refinement-wolfsgravestone-5" aria-selected="false">5</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="guides-lore-area hidden">
+												<div class="guides-lore-text-area">
+													<div class="guides-lore-title">
+														Story Summary
+													</div>
+													<p class="guides-lore-text">
+														Wolf's Gravestone's lore tells the tale of a knight who carried the will of the wolf to
+														defend the weak. This weapon is imbued with the spirit of the wolf, symbolizing unwavering
+														strength and resilience.
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="guides-link-area">
+											<div class="d-flex align-content-center">
+												<div class="guides-link-left me-auto"></div>
+												<div class="guides-link-right ms-auto"></div>
+											</div>
+										</div>
+										<div class="guides-action-area">
+											<div class="d-flex me-auto">
+												<div class="btn-group" role="group" aria-label="">
+													<input type="radio" class="btn-check" name="btnradio-wolfs-gravestone"
+														id="btndescription-wolfs-gravestone" autocomplete="off" checked>
+													<label class="btn btn-outline-primary" for="btndescription-wolfs-gravestone">
+														<i class="fa-solid fa-square-poll-horizontal"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-wolfs-gravestone"
+														id="btneffect-wolfs-gravestone" autocomplete="off">
+													<label class="btn btn-outline-primary" for="btneffect-wolfs-gravestone">
+														<i class="fa-solid fa-fire-flame-curved"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-wolfs-gravestone"
+														id="btnlore-wolfs-gravestone" autocomplete="off">
+													<label class="btn btn-outline-primary" for="btnlore-wolfs-gravestone">
+														<i class="fa-solid fa-book"></i>
+													</label>
+												</div>
+											</div>
+											<a class="main-link main-link-outline">See More ↗</a>
+										</div>
+									</div>
+								</div>
+								<!-- Xiphos' Moonlight -->
+								<div class="col-md-4 guides-card-weapon" id="card-xiphos-moonlight">
+									<div class="guides-area-weapon">
+										<div class="flag flag-weapon">
+											<div class="flag-content">
+												<span class="material-symbols-rounded">
+													swords
+												</span>
+											</div>
+										</div>
+										<div class="guides-weapon-main-area">
+											<div class="guides-description-area">
+												<div class="guides-header-area">
+													<div class="guides-header-weapon header-weapon-fourstars">
+														<div class="weapon-avatar weapon-xiphos-moonlight">
+														</div>
+													</div>
+													<div class="guides-header-main-info">
+														<div class="guides-header-main-name mb-0">
+															Xiphos' Moonlight
+														</div>
+													</div>
+												</div>
+												<div class="guides-weapon-description-text-area">
+													<div class="char-banner-text">Spotlight:</div>
+													<p class="guides-description-weapon-text">
+														A moonlit sword that reveals the hidden truths under its glow.
+													</p>
+												</div>
+												<div class="weapon-banner-level">Lv. 90</div>
+												<div class="row w-100">
+													<div class="col">
+														<div class="char-banner-text">
+															Base Atk:
+														</div>
+														<div class="char-banner-element-content">
+															<p>510</p>
+														</div>
+													</div>
+													<div class="col p-0">
+														<div class="char-banner-text">
+															Elemental Mastery:
+														</div>
+														<div class="char-banner-element-content">
+															<p>165</p>
+														</div>
+													</div>
+												</div>
+												<div class="guides-description-weapon-info-area">
+													<div class="row w-100">
+														<div class="col">
+															<div class="char-banner-rarity me-auto">
+																<div class="char-banner-text">
+																	Weapon:
+																</div>
+																<div class="char-banner-weapon-content char-banner-weapon">
+																	<div class="icon-weapon weapon-sword">
+																	</div>
+																	<p>Sword</p>
+																</div>
+															</div>
+														</div>
+														<div class="col">
+															<div class="char-banner-rarity me-auto">
+																<div class="char-banner-text">
+																	Rarity:
+																</div>
+																<div class="char-stars">
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star"></i>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="guides-effect-area hidden">
+												<div class="guides-effect-area-text">
+													<div class="guides-effect-title">
+														Sunken Eye
+													</div>
+													<div class="tab-content guides-effect-description-text" id="Refinementxiphos">
+														<div class="tab-pane fade show active" id="refinement-1" role="tabpanel"
+															aria-labelledby="refinement-xiphos-1-tab">
+															The following effect will trigger every 10s: the wielder will gain a buff that increases
+															Elemental Mastery by <span>50</span> and ATK by <span>15%</span> for 6s.
+														</div>
+														<div class="tab-pane fade" id="refinement-xiphos-2" role="tabpanel"
+															aria-labelledby="refinement-xiphos-2-tab">
+															The following effect will trigger every 10s: the wielder will gain a buff that increases
+															Elemental Mastery by <span>60</span> and ATK by <span>20%</span> for 6s.
+														</div>
+														<div class="tab-pane fade" id="refinement-xiphos-3" role="tabpanel"
+															aria-labelledby="refinement-xiphos-3-tab">
+															The following effect will trigger every 10s: the wielder will gain a buff that increases
+															Elemental Mastery by <span>70</span> and ATK by <span>25%</span> for 6s.
+														</div>
+														<div class="tab-pane fade" id="refinement-xiphos-4" role="tabpanel"
+															aria-labelledby="refinement-xiphos-4-tab">
+															The following effect will trigger every 10s: the wielder will gain a buff that increases
+															Elemental Mastery by <span>80</span> and ATK by <span>30%</span> for 6s.
+														</div>
+														<div class="tab-pane fade" id="refinement-xiphos-5" role="tabpanel"
+															aria-labelledby="refinement-xiphos-5-tab">
+															The following effect will trigger every 10s: the wielder will gain a buff that increases
+															Elemental Mastery by <span>90</span> and ATK by <span>35%</span> for 6s.
+														</div>
+													</div>
+												</div>
+												<div class="nav-tabs-refinement">
+													<div class="guides-effect-refinement-title">
+														Refinement:
+													</div>
+													<div class="ms-auto">
+														<ul class="nav nav-tabs " id="Refinement-xiphosTab" role="tablist">
+															<li class="nav-item">
+																<a class="nav-link active" id="refinement-xiphos-1-tab" data-toggle="tab"
+																	href="#refinement-xiphos-1" role="tab" aria-controls="refinement-xiphos-1"
+																	aria-selected="true">1</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" id="refinement-xiphos-2-tab" data-toggle="tab"
+																	href="#refinement-xiphos-2" role="tab" aria-controls="refinement-xiphos-2"
+																	aria-selected="false">2</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" id="refinement-xiphos-3-tab" data-toggle="tab"
+																	href="#refinement-xiphos-3" role="tab" aria-controls="refinement-xiphos-3"
+																	aria-selected="false">3</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" id="refinement-xiphos-4-tab" data-toggle="tab"
+																	href="#refinement-xiphos-4" role="tab" aria-controls="refinement-xiphos-4"
+																	aria-selected="false">4</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" id="refinement-xiphos-5-tab" data-toggle="tab"
+																	href="#refinement-xiphos-5" role="tab" aria-controls="refinement-xiphos-5"
+																	aria-selected="false">5</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="guides-lore-area hidden">
+												<div class="guides-lore-text-area">
+													<div class="guides-lore-title">
+														Story Summary
+													</div>
+													<p class="guides-lore-text">
+														Xiphos' Moonlight's lore speaks of a sword that glows under the moon, revealing hidden
+														secrets and ancient truths. It was once wielded by a mysterious warrior who roamed the
+														night.
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="guides-link-area">
+											<div class="d-flex align-content-center">
+												<div class="guides-link-left me-auto"></div>
+												<div class="guides-link-right ms-auto"></div>
+											</div>
+										</div>
+										<div class="guides-action-area">
+											<div class="d-flex me-auto">
+												<div class="btn-group" role="group" aria-label="">
+													<input type="radio" class="btn-check" name="btnradio-xiphos-moonlight"
+														id="btndescription-xiphos-moonlight" autocomplete="off" checked>
+													<label class="btn btn-outline-primary" for="btndescription-xiphos-moonlight">
+														<i class="fa-solid fa-square-poll-horizontal"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-xiphos-moonlight"
+														id="btneffect-xiphos-moonlight" autocomplete="off">
+													<label class="btn btn-outline-primary" for="btneffect-xiphos-moonlight">
+														<i class="fa-solid fa-fire-flame-curved"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-xiphos-moonlight"
+														id="btnlore-xiphos-moonlight" autocomplete="off">
+													<label class="btn btn-outline-primary" for="btnlore-xiphos-moonlight">
+														<i class="fa-solid fa-book"></i>
+													</label>
+												</div>
+											</div>
+											<a class="main-link main-link-outline">See More ↗</a>
+										</div>
+									</div>
+								</div>
+
+								<!-- Dark Iron Sword -->
+								<div class="col-md-4 guides-card-weapon" id="card-dark-iron-sword">
+									<div class="guides-area-weapon">
+										<div class="flag flag-weapon">
+											<div class="flag-content">
+												<span class="material-symbols-rounded">
+													swords
+												</span>
+											</div>
+										</div>
+										<div class="guides-weapon-main-area">
+											<div class="guides-description-area">
+												<div class="guides-header-area">
+													<div class="guides-header-weapon header-weapon-threestars">
+														<div class="weapon-avatar weapon-dark-iron-sword">
+														</div>
+													</div>
+													<div class="guides-header-main-info">
+														<div class="guides-header-main-name mb-0">
+															Dark Iron Sword
+														</div>
+													</div>
+												</div>
+												<div class="guides-weapon-description-text-area">
+													<div class="char-banner-text">Spotlight:</div>
+													<p class="guides-description-weapon-text">
+														A perfectly ordinary iron sword, just slightly darker than most.
+													</p>
+												</div>
+												<div class="weapon-banner-level">Lv. 90</div>
+												<div class="row w-100">
+													<div class="col">
+														<div class="char-banner-text">
+															Base Atk:
+														</div>
+														<div class="char-banner-element-content">
+															<p>401</p>
+														</div>
+													</div>
+													<div class="col p-0">
+														<div class="char-banner-text">
+															Elemental Mastery:
+														</div>
+														<div class="char-banner-element-content">
+															<p>141</p>
+														</div>
+													</div>
+												</div>
+												<div class="guides-description-weapon-info-area">
+													<div class="row w-100">
+														<div class="col">
+															<div class="char-banner-rarity me-auto">
+																<div class="char-banner-text">
+																	Weapon:
+																</div>
+																<div class="char-banner-weapon-content char-banner-weapon">
+																	<div class="icon-weapon weapon-sword">
+																	</div>
+																	<p>Sword</p>
+																</div>
+															</div>
+														</div>
+														<div class="col">
+															<div class="char-banner-rarity me-auto">
+																<div class="char-banner-text">
+																	Rarity:
+																</div>
+																<div class="char-stars">
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star"></i>
+																	<i class="bi bi-star"></i>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="guides-effect-area hidden">
+												<div class="guides-effect-area-text">
+													<div class="guides-effect-title">
+														Overloaded
+													</div>
+													<div class="tab-content guides-effect-description-text" id="Refinementdarkiron">
+														<div class="tab-pane fade show active" id="refinement-darkiron-1" role="tabpanel"
+															aria-labelledby="refinement-darkiron-1-tab">
+															Increases Elemental Mastery by <span>80</span> after triggering an Electro-related
+															Elemental Reaction for 12s.
+														</div>
+														<div class="tab-pane fade" id="refinement-darkiron-2" role="tabpanel"
+															aria-labelledby="refinement-darkiron-2-tab">
+															Increases Elemental Mastery by <span>100</span> after triggering an Electro-related
+															Elemental Reaction for 12s.
+														</div>
+														<div class="tab-pane fade" id="refinement-darkiron-3" role="tabpanel"
+															aria-labelledby="refinement-darkiron-3-tab">
+															Increases Elemental Mastery by <span>120</span> after triggering an Electro-related
+															Elemental Reaction for 12s.
+														</div>
+														<div class="tab-pane fade" id="refinement-darkiron-4" role="tabpanel"
+															aria-labelledby="refinement-darkiron-4-tab">
+															Increases Elemental Mastery by <span>140</span> after triggering an Electro-related
+															Elemental Reaction for 12s.
+														</div>
+														<div class="tab-pane fade" id="refinement-darkiron-5" role="tabpanel"
+															aria-labelledby="refinement-darkiron-5-tab">
+															Increases Elemental Mastery by <span>160</span> after triggering an Electro-related
+															Elemental Reaction for 12s.
+														</div>
+													</div>
+												</div>
+												<div class="nav-tabs-refinement">
+													<div class="guides-effect-refinement-title">
+														Refinement:
+													</div>
+													<div class="ms-auto">
+														<ul class="nav nav-tabs" id="Refinement-darkironTab" role="tablist">
+															<li class="nav-item">
+																<a class="nav-link active" id="refinement-darkiron-1-tab" data-toggle="tab"
+																	href="#refinement-darkiron-1" role="tab" aria-controls="refinement-darkiron-1"
+																	aria-selected="true">1</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" id="refinement-darkiron-2-tab" data-toggle="tab"
+																	href="#refinement-darkiron-2" role="tab" aria-controls="refinement-darkiron-2"
+																	aria-selected="false">2</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" id="refinement-darkiron-3-tab" data-toggle="tab"
+																	href="#refinement-darkiron-3" role="tab" aria-controls="refinement-darkiron-3"
+																	aria-selected="false">3</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" id="refinement-darkiron-4-tab" data-toggle="tab"
+																	href="#refinement-darkiron-4" role="tab" aria-controls="refinement-darkiron-4"
+																	aria-selected="false">4</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" id="refinement-darkiron-5-tab" data-toggle="tab"
+																	href="#refinement-darkiron-5" role="tab" aria-controls="refinement-darkiron-5"
+																	aria-selected="false">5</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="guides-lore-area hidden">
+												<div class="guides-lore-text-area">
+													<div class="guides-lore-title">
+														Story Summary
+													</div>
+													<p class="guides-lore-text">
+														A perfectly ordinary iron sword, just slightly darker than most. It was once the prized
+														possession of a now-forgotten adventurer.
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="guides-link-area">
+											<div class="d-flex align-content-center">
+												<div class="guides-link-left me-auto"></div>
+												<div class="guides-link-right ms-auto"></div>
+											</div>
+										</div>
+										<div class="guides-action-area">
+											<div class="d-flex me-auto">
+												<div class="btn-group" role="group" aria-label="">
+													<input type="radio" class="btn-check" name="btnradio-dark-iron-sword"
+														id="btndescription-dark-iron-sword" autocomplete="off" checked>
+													<label class="btn btn-outline-primary" for="btndescription-dark-iron-sword">
+														<i class="fa-solid fa-square-poll-horizontal"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-dark-iron-sword"
+														id="btneffect-dark-iron-sword" autocomplete="off">
+													<label class="btn btn-outline-primary" for="btneffect-dark-iron-sword">
+														<i class="fa-solid fa-fire-flame-curved"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-dark-iron-sword"
+														id="btnlore-dark-iron-sword" autocomplete="off">
+													<label class="btn btn-outline-primary" for="btnlore-dark-iron-sword">
+														<i class="fa-solid fa-book"></i>
+													</label>
+												</div>
+											</div>
+											<a class="main-link main-link-outline">See More ↗</a>
+										</div>
+									</div>
+								</div>
+
+								<!-- Toukabou Shigure -->
+								<div class="col-md-4 guides-card-weapon" id="card-toukabou-shigure">
+									<div class="guides-area-weapon">
+										<div class="flag flag-weapon">
+											<div class="flag-content">
+												<span class="material-symbols-rounded">
+													swords
+												</span>
+											</div>
+										</div>
+										<div class="guides-weapon-main-area">
+											<div class="guides-description-area">
+												<div class="guides-header-area">
+													<div class="guides-header-weapon header-weapon-fourstars">
+														<div class="weapon-avatar weapon-toukabou-shigure">
+														</div>
+													</div>
+													<div class="guides-header-main-info">
+														<div class="guides-header-main-name mb-0">
+															Toukabou Shigure
+														</div>
+													</div>
+												</div>
+												<div class="guides-weapon-description-text-area">
+													<div class="char-banner-text">Spotlight:</div>
+													<p class="guides-description-weapon-text">
+														A mystical blade that summons the power of a summer storm, bringing rain and lightning upon
+														its foes.
+													</p>
+												</div>
+												<div class="weapon-banner-level">Lv. 90</div>
+												<div class="row w-100">
+													<div class="col">
+														<div class="char-banner-text">
+															Base Atk:
+														</div>
+														<div class="char-banner-element-content">
+															<p>510</p>
+														</div>
+													</div>
+													<div class="col p-0">
+														<div class="char-banner-text">
+															Elemental Mastery:
+														</div>
+														<div class="char-banner-element-content">
+															<p>165</p>
+														</div>
+													</div>
+												</div>
+												<div class="guides-description-weapon-info-area">
+													<div class="row w-100">
+														<div class="col">
+															<div class="char-banner-rarity me-auto">
+																<div class="char-banner-text">
+																	Weapon:
+																</div>
+																<div class="char-banner-weapon-content char-banner-weapon">
+																	<div class="icon-weapon weapon-sword">
+																	</div>
+																	<p>Sword</p>
+																</div>
+															</div>
+														</div>
+														<div class="col">
+															<div class="char-banner-rarity me-auto">
+																<div class="char-banner-text">
+																	Rarity:
+																</div>
+																<div class="char-stars">
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star-fill"></i>
+																	<i class="bi bi-star"></i>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="guides-effect-area hidden">
+												<div class="guides-effect-area-text">
+													<div class="guides-effect-title">
+														Storm Summoner
+													</div>
+													<div class="tab-content guides-effect-description-text" id="Refinementtoukabou">
+														<div class="tab-pane fade show active" id="refinement-toukabou-1" role="tabpanel"
+															aria-labelledby="refinement-toukabou-1-tab">
+															After using an Elemental Skill, increases Elemental Mastery by <span>40</span> and ATK by
+															<span>10%</span> for 10s.
+														</div>
+														<div class="tab-pane fade" id="refinement-toukabou-2" role="tabpanel"
+															aria-labelledby="refinement-toukabou-2-tab">
+															After using an Elemental Skill, increases Elemental Mastery by <span>50</span> and ATK by
+															<span>12.5%</span> for 10s.
+														</div>
+														<div class="tab-pane fade" id="refinement-toukabou-3" role="tabpanel"
+															aria-labelledby="refinement-toukabou-3-tab">
+															After using an Elemental Skill, increases Elemental Mastery by <span>60</span> and ATK by
+															<span>15%</span> for 10s.
+														</div>
+														<div class="tab-pane fade" id="refinement-toukabou-4" role="tabpanel"
+															aria-labelledby="refinement-toukabou-4-tab">
+															After using an Elemental Skill, increases Elemental Mastery by <span>70</span> and ATK by
+															<span>17.5%</span> for 10s.
+														</div>
+														<div class="tab-pane fade" id="refinement-toukabou-5" role="tabpanel"
+															aria-labelledby="refinement-toukabou-5-tab">
+															After using an Elemental Skill, increases Elemental Mastery by <span>80</span> and ATK by
+															<span>20%</span> for 10s.
+														</div>
+													</div>
+												</div>
+												<div class="nav-tabs-refinement">
+													<div class="guides-effect-refinement-title">
+														Refinement:
+													</div>
+													<div class="ms-auto">
+														<ul class="nav nav-tabs" id="Refinement-toukabouTab" role="tablist">
+															<li class="nav-item">
+																<a class="nav-link active" id="refinement-toukabou-1-tab" data-toggle="tab"
+																	href="#refinement-toukabou-1" role="tab" aria-controls="refinement-toukabou-1"
+																	aria-selected="true">1</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" id="refinement-toukabou-2-tab" data-toggle="tab"
+																	href="#refinement-toukabou-2" role="tab" aria-controls="refinement-toukabou-2"
+																	aria-selected="false">2</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" id="refinement-toukabou-3-tab" data-toggle="tab"
+																	href="#refinement-toukabou-3" role="tab" aria-controls="refinement-toukabou-3"
+																	aria-selected="false">3</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" id="refinement-toukabou-4-tab" data-toggle="tab"
+																	href="#refinement-toukabou-4" role="tab" aria-controls="refinement-toukabou-4"
+																	aria-selected="false">4</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" id="refinement-toukabou-5-tab" data-toggle="tab"
+																	href="#refinement-toukabou-5" role="tab" aria-controls="refinement-toukabou-5"
+																	aria-selected="false">5</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="guides-lore-area hidden">
+												<div class="guides-lore-text-area">
+													<div class="guides-lore-title">
+														Story Summary
+													</div>
+													<p class="guides-lore-text">
+														Toukabou Shigure is a blade that has been passed down through generations, its power growing
+														with each new wielder. It is said to contain the essence of a summer storm, bringing rain
+														and lightning to those who command it.
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="guides-link-area">
+											<div class="d-flex align-content-center">
+												<div class="guides-link-left me-auto"></div>
+												<div class="guides-link-right ms-auto"></div>
+											</div>
+										</div>
+										<div class="guides-action-area">
+											<div class="d-flex me-auto">
+												<div class="btn-group" role="group" aria-label="">
+													<input type="radio" class="btn-check" name="btnradio-toukabou-shigure"
+														id="btndescription-toukabou-shigure" autocomplete="off" checked>
+													<label class="btn btn-outline-primary" for="btndescription-toukabou-shigure">
+														<i class="fa-solid fa-square-poll-horizontal"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-toukabou-shigure"
+														id="btneffect-toukabou-shigure" autocomplete="off">
+													<label class="btn btn-outline-primary" for="btneffect-toukabou-shigure">
+														<i class="fa-solid fa-fire-flame-curved"></i>
+													</label>
+													<input type="radio" class="btn-check" name="btnradio-toukabou-shigure"
+														id="btnlore-toukabou-shigure" autocomplete="off">
+													<label class="btn btn-outline-primary" for="btnlore-toukabou-shigure">
+														<i class="fa-solid fa-book"></i>
+													</label>
+												</div>
+											</div>
+											<a class="main-link main-link-outline">See More ↗</a>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<!--<div class="contact-content" id="scrollContact">
+					</div>
+					<!--<div class="contact-content" id="scrollContact">
 							<div class="caption-frame">
 								<p class="caption-number">07.</p>
 								<div class="d-block">
@@ -1209,21 +3181,21 @@
 							</div>
 							<div class="caption-hr"></div>
 						</div>-->
-					</div>
-					<div class="col-md-2">
-
-					</div>
 				</div>
-				<div class="d-flex">
-					<div class="">
+				<div class="col-md-2">
 
-					</div>
+				</div>
+			</div>
+			<div class="d-flex">
+				<div class="">
+
 				</div>
 			</div>
 		</div>
+		</div>
 	</main>
 
-
+	<p class="midas-version">Current Version:<span>v0.13b</span></p>
 
 	<div class="container">
 		<div class="row">
@@ -1248,9 +3220,112 @@
 	<!-- Script Cursor Personalizado -->
 
 	<script>
+		document.querySelectorAll('.btn-check').forEach(button => {
+			button.addEventListener('click', () => {
+				const guidescard = button.closest('.guides-card-weapon');
+				const descriptionWeaponArea = guidescard.querySelector('.guides-description-area');
+				const effectWeaponArea = guidescard.querySelector('.guides-effect-area');
+				const loreWeaponArea = guidescard.querySelector('.guides-lore-area');
 
-
+				if (button.id.includes('btndescription')) {
+					descriptionWeaponArea.classList.remove('hidden');
+					effectWeaponArea.classList.add('hidden');
+					loreWeaponArea.classList.add('hidden');
+				} else if (button.id.includes('btneffect')) {
+					descriptionWeaponArea.classList.add('hidden');
+					effectWeaponArea.classList.remove('hidden');
+					loreWeaponArea.classList.add('hidden');
+				} else if (button.id.includes('btnlore')) {
+					descriptionWeaponArea.classList.add('hidden');
+					effectWeaponArea.classList.add('hidden');
+					loreWeaponArea.classList.remove('hidden');
+				}
+			});
+		});
 	</script>
+
+	<script>
+		document.querySelectorAll('.btn-check').forEach(button => {
+			button.addEventListener('click', () => {
+				const guidescard = button.closest('.guides-card-char');
+				const descriptionArea = guidescard.querySelector('.guides-description-area');
+				const loreArea = guidescard.querySelector('.guides-lore-area');
+				const charViewArea = guidescard.querySelector('.guides-charview-area');
+
+				if (button.id.includes('btndescription')) {
+					descriptionArea.classList.remove('hidden');
+					loreArea.classList.add('hidden');
+					charViewArea.classList.add('hidden');
+				} else if (button.id.includes('btnlore')) {
+					descriptionArea.classList.add('hidden');
+					loreArea.classList.remove('hidden');
+					charViewArea.classList.add('hidden');
+				} else if (button.id.includes('btncharview')) {
+					descriptionArea.classList.add('hidden');
+					loreArea.classList.add('hidden');
+					charViewArea.classList.remove('hidden');
+				}
+			});
+		});
+	</script>
+
+	<script>
+		const tabEl = document.querySelector('button[data-bs-toggle="tab"]')
+		tabEl.addEventListener('shown.bs.tab', event => {
+			event.target
+			event.relatedTarget
+		})
+	</script>
+
+	<script>
+		const loadmore = document.getElementById('load-more');
+		const spinner = document.getElementById('spinner');
+		document.querySelectorAll('.btn-load').forEach(button => {
+			button.addEventListener('click', () => {
+
+				loadmore.classList.add('hidden');
+				spinner.classList.remove('hidden');
+			});
+		});
+	</script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const spinner = document.getElementById('spinner');
+			const hiddenCards = document.querySelectorAll('.guides-card-char.hidden');
+			let cardIndex = 0;
+
+			function loadCards(entries, observer) {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						observer.unobserve(spinner);
+						spinner.style.display = 'block';
+
+						setTimeout(() => {
+							for (let i = 0; i < 3 && cardIndex < hiddenCards.length; i++, cardIndex++) {
+								hiddenCards[cardIndex].classList.remove('hidden');
+							}
+							if (cardIndex < hiddenCards.length) {
+								observer.observe(spinner);
+							} else {
+								spinner.style.display = 'none';
+							}
+						}, 800); // Delay
+					}
+				});
+			}
+
+			const observer = new IntersectionObserver(loadCards, {
+				root: null,
+				rootMargin: '0px',
+				threshold: 1.0
+			});
+
+			observer.observe(spinner);
+		});
+	</script>
+
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -1278,21 +3353,7 @@
 	</script>
 
 	<script>
-		const myModal = document.getElementById('myModal')
-		const myInput = document.getElementById('myInput')
-
-		myModal.addEventListener('shown.bs.modal', () => {
-			myInput.focus()
-		})
-	</script>
-
-
-	<script>
 		document.querySelector('.char-main-banner-area').addEventListener('click', function () {
-			window.location.href = 'https://www.example.com';
-		});
-
-		document.querySelector('.char-banner-xiao').addEventListener('click', function () {
 			window.location.href = 'https://www.example.com';
 		});
 

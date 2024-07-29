@@ -38,13 +38,7 @@
   background-image: url('../../../Assets/Character/Clorinde/clorinde-full.png');
 }
 
-.char-raiden {
-  background-image: url('../../../Assets/Character/Raiden/raiden.png');
-}
 
-.face-raiden {
-  background-image: url("../../../Assets/character/Raiden/raiden-face.jpg");
-}
 
 .char-ganyu {
   background-image: url('../../../Assets/character/ganyu/ganyu.png');
@@ -92,22 +86,62 @@
 
 .element-anemo {
   content: "";
-  background-image: url(../../../../src/assets/material/elements/element-electro.webp);
+  background-image: url(../../../../src/assets/material/elements/element_anemo.webp);
 }
 
 .element-electro {
   content: "";
-  background-image: url(../../../../src/assets/material/elements/element-electro.webp);
+  background-image: url(../../../../src/assets/material/elements/element_electro.webp);
 }
 
 .element-pyro {
   content: "";
-  background-image: url(../../../../src/assets/material/elements/element-electro.webp);
+  background-image: url(../../../../src/assets/material/elements/element_pyro.webp);
 }
 
 .element-hydro {
   content: "";
-  background-image: url(../../../../src/assets/material/elements/element-electro.webp);
+  background-image: url(../../../../src/assets/material/elements/element_hydro.webp);
+}
+
+.element-dendro {
+  content: "";
+  background-image: url(../../../../src/assets/material/elements/element_dendro.webp);
+}
+
+.element-geo {
+  content: "";
+  background-image: url(../../../../src/assets/material/elements/element_geo.webp);
+}
+
+.element-cryo {
+  content: "";
+  background-image: url(../../../../src/assets/material/elements/element_cryo.webp);
+}
+
+.weapon-bow {
+  content: "";
+  background-image: url(../../../../src/assets/material/weapons/weapon_Bow.webp);
+}
+
+.weapon-catalyst {
+  content: "";
+  background-image: url(../../../../src/assets/material/weapons/weapon_Catalyst.webp);
+}
+
+.weapon-claymore {
+  content: "";
+  background-image: url(../../../../src/assets/material/weapons/weapon_Claymore.webp);
+}
+
+.weapon-polearm {
+  content: "";
+  background-image: url(../../../../src/assets/material/weapons/weapon_Polearm.webp);
+}
+
+.weapon-sword {
+  content: "";
+  background-image: url(../../../../src/assets/material/weapons/weapon_Sword.webp);
 }
 
 .item-mora::before {
@@ -132,3 +166,90 @@
   height: 20px;
 }
 
+.char-raiden {
+  background-image: url('../../../Assets/Character/Raiden/raiden.png');
+}
+
+.face-raiden {
+  background-image: url("../../../Assets/character/Raiden/raiden-face.jpg");
+}
+
+.card-raiden {
+  background-image: url("../../../Assets/character/Raiden/raiden-card.gif");
+}
+
+.card-beidou {
+  content: "";
+  background-image: url("../../../../src/assets/character/Beidou/beidou-card.gif");
+}
+
+.face-beidou {
+  background-image: url("../../../Assets/character/Beidou/beidou-face.jpg");
+}
+
+.card-hutao {
+  content: "";
+  background-image: url("../../../../src/assets/character/Hutao/hutao-card.gif");
+}
+
+.face-hutao {
+  background-image: url("../../../Assets/character/Hutao/hutao-face.jpg");
+}
+
+.card-nilou {
+  content: "";
+  background-image: url("../../../../src/assets/character/Nilou/nilou-card.gif");
+}
+
+.face-nilou {
+  background-image: url("../../../Assets/character/Nilou/nilou-face.jpg");
+}
+
+.card-xiao {
+  content: "";
+  background-image: url("../../../../src/assets/character/Xiao/xiao-card.gif");
+}
+
+.face-xiao {
+  background-image: url("../../../Assets/character/Xiao/xiao-face.jpg");
+}
+
+.card-zhongli {
+  content: "";
+  background-image: url("../../../../src/assets/character/Zhongli/zhongli-card.gif");
+}
+
+.face-zhongli {
+  background-image: url("../../../Assets/character/Zhongli/zhongli-face.jpg");
+}
+
+.card-mona {
+  content: "";
+  background-image: url("../../../../src/assets/character/Mona/mona-card.gif");
+}
+
+.face-mona {
+  background-image: url("../../../Assets/character/Mona/mona-face.jpg");
+}
+
+.card-eula {
+  content: "";
+  background-image: url("../../../../src/assets/character/Eula/eula-card.gif");
+}
+
+.face-eula {
+  background-image: url("../../../Assets/character/Eula/eula-face.jpg");
+}
+
+.card-baizhu {
+  content: "";
+  background-image: url("../../../../src/assets/character/Baizhu/baizhu-card.gif");
+}
+
+.face-baizhu {
+  background-image: url("../../../Assets/character/Baizhu/baizhu-face.jpg");
+}
+
+.face-yelan {
+  background-image: url("../../../Assets/character/Yelan/yelan-face.jpg");
+}

@@ -7,3 +7,13 @@
   height: 320px !important;
   object-fit: cover !important;
 }
+
+.midas-version {
+  font-size: 12px;
+  color: var(--mygray-50);
+}
+
+.midas-version span {
+  padding-left: 8px;
+  color: var(--myindigo);
+}

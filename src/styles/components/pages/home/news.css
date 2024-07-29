@@ -27,7 +27,7 @@
 .news-articles-area {
   padding-right: 16px;
   overflow-y: scroll;
-  height: 288px;
+  height: 344px;
   margin-top: 16px;
 }
 
@@ -54,7 +54,9 @@
 }
 
 .news-article-title {
-  font-size: 16px;
+  font-size: 20px;
+  line-height: 1;
+  margin-bottom: 4px !important;
   font-weight: bold;
   color: var(--mygray-80);
 }
@@ -71,11 +73,24 @@
 }
 
 .news-banner-avatar {
-  background-color: pink;
+  border-radius: 4px;
+  border: 1px solid var(--mygray-40);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 48px;
   height: 48px;
 }
 
 .news-banner-title {
-  
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 8px;
+  margin: 0 !important;
+}
+
+.news-banner-name {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
 }
