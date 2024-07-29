@@ -638,6 +638,14 @@
   background-color: var(--myblue);
 }
 
+.header-weapon-twostars {
+  background-color: var(--mygreen);
+}
+
+.header-weapon-onestars {
+  background-color: var(--mygray);
+}
+
 .guides-weapon-main-area {
   min-height: 344px;
   background-color: var(--mywhite);
