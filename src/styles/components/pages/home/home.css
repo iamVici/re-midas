@@ -481,7 +481,7 @@ nav {
 }
 
 .author-vici {
-  background-image: url('../../../../Assets/profile/avatar/avatar-main-b.jpg');
+  background-image: url('../../../../Assets/profile/avatar/iamvici-avatar.jpg');
 }
 
 .content-page {
@@ -580,4 +580,8 @@ nav {
   padding: 8px !important;
 }
 
-
+.main-link span {
+  font-size: 22px;
+  padding-left: 4px;
+  font-weight: 500;
+}

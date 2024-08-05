@@ -44,7 +44,31 @@
   z-index: 999;
 }
 
+.char-tag-popular {
+  width: 88px;
+  padding: 4px 8px;
+  background-color: var(--myindigo);
+  color: var(--mywhite);
+  text-transform: uppercase;
+  font-weight: bold;
+  top: 24px;
+  right: -24px;
+  position: absolute;
+  line-height: 1;
+  font-size: 16px;
+  text-align: center;
+  z-index: 999;
+}
+
 .char-main-banner-background {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 320px;
+  border-radius: 24px;
+}
+
+.weapon-main-banner-background {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -71,7 +95,26 @@
   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
 }
 
+.weapon-main-banner {
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 440px;
+  scale: 1;
+  top: -120px;
+  left: 124px;
+  position: relative;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+}
+
 .char-effect {
+  width: 100%;
+  height: 320px;
+  border-radius: 24px;
+}
+
+.weapon-effect {
   width: 100%;
   height: 320px;
   border-radius: 24px;
@@ -82,6 +125,16 @@
 }
 
 .char-main-banner-description {
+  position: absolute;
+  margin: auto 0;
+  justify-content: center;
+  align-items: center;
+  padding-left: 32px;
+  height: 320px;
+  align-content: center;
+}
+
+.weapon-main-banner-description {
   position: absolute;
   margin: auto 0;
   justify-content: center;
@@ -286,24 +339,31 @@
   font-size: 12px;
 }
 
-.char-tag-popular {
-  padding: 4px 8px;
-  background-color: var(--mypink);
-  color: var(--mywhite);
-  text-transform: uppercase;
-  font-style: italic;
-  font-weight: bold;
-  margin-top: 24px;
-  margin-left: -8px;
+.char-main-banner-shadow-left {
+  background: linear-gradient(90deg,
+      hsla(0, 0%, 9%, .50) 20%,
+      hsla(0, 0%, 9%, .45) 25%,
+      hsla(0, 0%, 9%, .40) 35%,
+      hsla(0, 0%, 9%, .35) 40%,
+      hsla(0, 0%, 9%, .30) 45%,
+      hsla(0, 0%, 9%, .25) 50%,
+      hsla(0, 0%, 9%, .20) 55%,
+      hsla(0, 0%, 9%, .15) 60%,
+      hsla(0, 0%, 9%, .10) 65%,
+      hsla(0, 0%, 9%, .05) 70%,
+      hsla(0, 0%, 9%, .0) 75%,
+      hsla(0, 0%, 9%, .0) 80%,
+      hsla(0, 0%, 9%, .0) 85%,
+      hsla(0, 0%, 9%, .0) 90%,
+      hsla(0, 0%, 9%, .0) 95%,
+      hsla(0, 0%, 9%, 0));
   position: absolute;
-  border-radius: 0 8px 8px 8px;
-  line-height: 1;
-  font-size: 16px;
-  text-align: center;
-  z-index: 999;
+  width: 100%;
+  z-index: 2;
+  border-radius: 24px;
 }
 
-.char-main-banner-shadow-left {
+.weapon-main-banner-shadow-left {
   background: linear-gradient(90deg,
       hsla(0, 0%, 9%, .50) 20%,
       hsla(0, 0%, 9%, .45) 25%,
@@ -334,6 +394,7 @@
 
 .guides-header-area {
   display: flex;
+  align-items: center;
 }
 
 .guides-header-char {
@@ -566,15 +627,16 @@
 }
 
 .main-link-outline {
-  background-color: var(--mywhite) !important;
+  background-color: transparent !important;
   color: var(--myindigo) !important;
   font-size: 16px !important;
-  padding: 4px 16px !important;
+  padding: 4px 4px !important;
   text-decoration: none !important;
   transition: 400ms !important;
 }
 
 .main-link-outline:hover {
+  background-color: transparent !important;
   color: var(--myindigo-80) !important;
   transition: 400ms !important;
 }
@@ -624,6 +686,14 @@
   height: 48px;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.weapon-avatar.weapon-toukabou-shigure {
+  scale: 1.2;
+}
+
+.weapon-avatar.weapon-seasoned-hunters-bow {
+  scale: 1.2;
 }
 
 .header-weapon-fivestars {
@@ -763,4 +833,42 @@
   display: flex;
   border-top: 1px solid var(--myindigo);
   margin-top: 4px;
+}
+
+.btn-outline-primary.disabled {
+  background-color: var(--myblack-20) !important;
+  color: var(--myblack-60) !important;
+}
+
+.weapon-banner-description-area {
+  width: 400px;
+}
+
+.weapon-banner-description-text {
+  font-size: 14px;
+  color: var(--mywhite);
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  display: -webkit-box;
+}
+
+.weapon-banner-subtitle {
+  color: var(--mygray);
+  font-size: 12px;
+}
+
+.weapon-banner-value-content p {
+  margin: 0 !important;
+  padding-left: 2px;
+  color: var(--mywhite);
+  font-size: 14px;
+}
+
+.weapon-main-banner-name {
+  font-size: 32px;
+  padding-left: 8px;
+  font-weight: bold;
+  margin: 0;
+  color: var(--mywhite);
+  line-height: 1;
 }

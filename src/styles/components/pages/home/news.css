@@ -15,6 +15,35 @@
   background-image: url('../../../../assets/backgrounds/events/yelancap.png');
 }
 
+.news-banner.carousel-item {
+  width: 540px !important;
+  height: 300px !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  border-radius: 16px !important;
+}
+
+.news-banner img {
+  border-radius: 16px !important;
+  overflow: hidden;
+}
+
+#carouselNews {
+  width: 540px !important;
+  height: 300px !important;
+}
+
+.carousel-shadow-bottom {
+  background: linear-gradient(0deg, #181818 0, hsla(0, 0%, 9%, .987) 8%, hsla(0, 0%, 9%, .951) 12%, hsla(0, 0%, 9%, .896) 16%, hsla(0, 0%, 9%, .825) 20%, hsla(0, 0%, 9%, .741) 24%, hsla(0, 0%, 9%, .648) 28%, hsla(0, 0%, 9%, .55) 32%, hsla(0, 0%, 9%, .45) 36%, hsla(0, 0%, 9%, .352) 40%, hsla(0, 0%, 9%, .259) 44%, hsla(0, 0%, 9%, .175) 48%, hsla(0, 0%, 9%, .104) 52%, hsla(0, 0%, 9%, .049) 56%, hsla(0, 0%, 9%, .013) 60%, hsla(0, 0%, 9%, 0) 64%);
+  position: absolute;
+  height: 340px !important;
+  width: 540px !important;
+  z-index: 1;
+  margin-top: -340px;
+  border-radius: 16px;
+}
+
 .news-article:not(:first-child) {
   padding-top: 16px;
 }
@@ -27,7 +56,7 @@
 .news-articles-area {
   padding-right: 16px;
   overflow-y: scroll;
-  height: 344px;
+  height: 400px;
   margin-top: 16px;
 }
 
@@ -43,7 +72,7 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  border-radius: 8px;
+  border-radius: 2px;
 }
 
 .news-article-author-name {
@@ -65,6 +94,11 @@
   font-size: 16px;
   font-weight: lighter;
   color: var(--mygray-60);
+  max-height: 48px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
 }
 
 .news-article a {
@@ -93,4 +127,39 @@
   display: flex;
   align-items: center;
   margin-top: 8px;
+}
+
+.news-banner-award {
+  display: flex;
+  align-items: center;
+  background-color: var(--myyellow-20);
+  box-shadow: 0px 0px 24px 8px var(--myyellow-10);
+  color: var(--myyellow);
+  border-radius: 4px;
+  padding: 12px 16px;
+  width: 100%;
+  margin: 8px 0;
+  transition: 800ms;
+}
+
+.news-banner-award-text {
+  line-height: 1;
+  margin: 0 !important;
+  padding-left: 8px;
+  text-shadow: var(--myyellow-80) 0px 0px 24px;
+}
+
+.news-banner-award:hover {
+  background-color: var(--myyellow);
+  color: var(--myblack) !important;
+  box-shadow: 0px 0px 24px 8px var(--myyellow-60);
+  cursor: pointer;
+  transition: 800ms;
+}
+
+.news-article .main-link {
+  justify-content: left !important;
+  padding: 0 !important;
+  min-height: 24px !important;
+  max-height: 24px !important;
 }

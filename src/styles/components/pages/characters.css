@@ -22,6 +22,10 @@
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, var(--myindigo-40) 100%);
 }
 
+.event-yellow {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, var(--myyellow-40) 100%);
+}
+
 .char-yae {
   background-image: url('../../../Assets/Character/Yaemiko/yaemiko-full.png');
 }
@@ -252,4 +256,8 @@
 
 .face-yelan {
   background-image: url("../../../Assets/character/Yelan/yelan-face.jpg");
+}
+
+.face-kokomi {
+  background-image: url("../../../Assets/character/Kokomi/kokomi-face.jpg");
 }

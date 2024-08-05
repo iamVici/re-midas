@@ -1,0 +1,132 @@
+.contact-content {
+  min-height: 720px;
+}
+
+.contact-title {
+  color: var(--mywhite-80);
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 4px;
+  line-height: 1;
+}
+
+.contact-text {
+  font-size: 18px;
+}
+
+.form{
+  font-family: 'dmsans';
+}
+
+.label{
+  font-family: 'ClashDisplay-Medium';
+}
+
+.btn-form{
+  margin-top: 12px;
+  border-radius: 16px;
+  width: 100%;
+}
+
+.mybtn-form:hover{
+  background-color: var(--myindigo);
+  color: white;
+}
+
+.form-group textarea{
+  resize: none;
+  border-radius: 4px;
+  background-color: var(--mygray);
+  height: 155px !important;
+}
+
+.form input {
+  background-color: var(--mygray);
+  border-radius: 4px;
+}
+
+.myform .myalert-info{
+  margin-top: 12px;
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px black;
+  background-color: #eeeeee;
+  border: 1px solid black;
+  border-radius: 4px;
+  opacity: 1 !important;
+  color: black;
+}
+
+.form input:focus,
+.form textarea:focus {
+  background-color: white !important;
+  border: 1px solid black;
+  box-shadow: 0 0 0 2px black;
+  opacity: 1 !important;
+  color: black;
+}
+
+::placeholder { 
+  opacity: 0.75 !important;
+}
+
+::-ms-input-placeholder { 
+  opacity: 0.75 !important;
+}
+
+.contact-text{
+  font-size: 18px;
+}
+
+.contact hr{
+  width: 10px;
+  height: 2px;
+  background-color: var(--myblack) !important;
+  margin: 10px 0 10px 0;
+  opacity: 1;
+}
+
+.contact-info {
+  position: relative;
+}
+
+.copy-button {
+  background-color: #dbdbdb;
+  border: 2px solid #dbdbdb;
+  border-radius: 4px;
+  color: black;
+  padding: 2px 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.copy-button:hover{
+  background-color: var(--myindigo);
+  border: 2px solid var(--myindigo);
+  color: white;
+}
+
+.copy-button:active {
+  background-color: var(--myindigo-50);
+  border: 2px solid var(--myindigo-50) !important;
+  color: white;
+}
+
+.signature {
+  text-align: -webkit-center;
+  padding: 64px 0;
+  color: #474747;
+}
+
+.message-info {
+  display: flex;
+  margin-top: 16px;
+  color: var(--mygray-50);
+}

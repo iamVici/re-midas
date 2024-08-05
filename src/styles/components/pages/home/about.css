@@ -6,6 +6,7 @@
   width: 100% !important;
   height: 320px !important;
   object-fit: cover !important;
+  border-radius: 16px;
 }
 
 .midas-version {

@@ -150,3 +150,12 @@
   box-shadow: 0 0 0 2px var(--myindigo-20) !important;
   border-color: var(--myindigo) !important;
 }
+
+.modal-dialog {
+  display: block !important;
+  align-content: center !important;
+}
+
+.modal-login-header-area {
+  margin-bottom: 8px;
+}
